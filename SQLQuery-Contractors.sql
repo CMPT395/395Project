@@ -29,3 +29,19 @@ SET ANSI_PADDING OFF
 GO
 
 
+INSERT INTO Contractors
+VALUES(1, 1, 'a', 'a', 'contractor1@gmail.com');
+INSERT INTO Contractors
+VALUES(2, 2, 'b', 'b', 'contractor2@gmail.com');
+INSERT INTO Contractors
+VALUES(3, 3, 'c', 'c', 'contractor3@gmail.com');
+INSERT INTO Contractors
+VALUES(4, 4, 'd', 'd', 'contractor4@gmail.com');
+INSERT INTO Contractors
+VALUES(5, 5, 'e', 'e', 'contractor5@gmail.com');
+INSERT INTO Contractors
+VALUES(6, 6, 'f', 'f', 'contractor6@gmail.com');
+
+
+
+

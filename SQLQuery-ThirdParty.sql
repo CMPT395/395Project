@@ -28,3 +28,13 @@ SET ANSI_PADDING OFF
 GO
 
 
+INSERT INTO ThirdParty
+VALUES(11,1, 'aaa', 'thirdparty1@gmail.com');
+INSERT INTO ThirdParty
+VALUES(22,2, 'bbb', 'thirdparty2@gmail.com');
+INSERT INTO ThirdParty
+VALUES(33,3, 'ccc', 'thirdparty3@gmail.com');
+INSERT INTO ThirdParty
+VALUES(44,4, 'ddd', 'thirdparty4@gmail.com');
+INSERT INTO ThirdParty
+VALUES(55,5, 'eee', 'thirdparty5@gmail.com');
