@@ -27,66 +27,78 @@ Partial Class login
         Me.idbox = New System.Windows.Forms.TextBox()
         Me.passwordbox = New System.Windows.Forms.TextBox()
         Me.MLOGIN = New System.Windows.Forms.Button()
+        Me.Clear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ID
         '
         Me.ID.AutoSize = True
-        Me.ID.Location = New System.Drawing.Point(129, 89)
-        Me.ID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.ID.Location = New System.Drawing.Point(70, 51)
+        Me.ID.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.ID.Name = "ID"
-        Me.ID.Size = New System.Drawing.Size(32, 21)
+        Me.ID.Size = New System.Drawing.Size(17, 12)
         Me.ID.TabIndex = 0
         Me.ID.Text = "ID"
         '
         'Password
         '
         Me.Password.AutoSize = True
-        Me.Password.Location = New System.Drawing.Point(91, 171)
-        Me.Password.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Password.Location = New System.Drawing.Point(50, 98)
+        Me.Password.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Password.Name = "Password"
-        Me.Password.Size = New System.Drawing.Size(98, 21)
+        Me.Password.Size = New System.Drawing.Size(53, 12)
         Me.Password.TabIndex = 1
         Me.Password.Text = "Password"
         '
         'idbox
         '
-        Me.idbox.Location = New System.Drawing.Point(215, 86)
-        Me.idbox.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.idbox.Location = New System.Drawing.Point(117, 49)
+        Me.idbox.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.idbox.Name = "idbox"
-        Me.idbox.Size = New System.Drawing.Size(176, 31)
+        Me.idbox.Size = New System.Drawing.Size(98, 21)
         Me.idbox.TabIndex = 2
         '
         'passwordbox
         '
-        Me.passwordbox.Location = New System.Drawing.Point(215, 168)
-        Me.passwordbox.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.passwordbox.Location = New System.Drawing.Point(117, 96)
+        Me.passwordbox.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.passwordbox.Name = "passwordbox"
-        Me.passwordbox.Size = New System.Drawing.Size(176, 31)
+        Me.passwordbox.Size = New System.Drawing.Size(98, 21)
         Me.passwordbox.TabIndex = 3
         Me.passwordbox.UseSystemPasswordChar = True
         '
         'MLOGIN
         '
-        Me.MLOGIN.Location = New System.Drawing.Point(227, 244)
-        Me.MLOGIN.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.MLOGIN.Location = New System.Drawing.Point(72, 141)
+        Me.MLOGIN.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.MLOGIN.Name = "MLOGIN"
-        Me.MLOGIN.Size = New System.Drawing.Size(108, 38)
+        Me.MLOGIN.Size = New System.Drawing.Size(59, 22)
         Me.MLOGIN.TabIndex = 5
         Me.MLOGIN.Text = "Login"
         Me.MLOGIN.UseVisualStyleBackColor = True
         '
+        'Clear
+        '
+        Me.Clear.Location = New System.Drawing.Point(168, 141)
+        Me.Clear.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
+        Me.Clear.Name = "Clear"
+        Me.Clear.Size = New System.Drawing.Size(59, 22)
+        Me.Clear.TabIndex = 6
+        Me.Clear.Text = "Clear"
+        Me.Clear.UseVisualStyleBackColor = True
+        '
         'login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(520, 351)
+        Me.ClientSize = New System.Drawing.Size(284, 201)
+        Me.Controls.Add(Me.Clear)
         Me.Controls.Add(Me.MLOGIN)
         Me.Controls.Add(Me.passwordbox)
         Me.Controls.Add(Me.idbox)
         Me.Controls.Add(Me.Password)
         Me.Controls.Add(Me.ID)
-        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Name = "login"
         Me.Text = "Login"
         Me.ResumeLayout(False)
@@ -99,4 +111,5 @@ Partial Class login
     Friend WithEvents idbox As TextBox
     Friend WithEvents passwordbox As TextBox
     Friend WithEvents MLOGIN As Button
+    Friend WithEvents Clear As Button
 End Class
