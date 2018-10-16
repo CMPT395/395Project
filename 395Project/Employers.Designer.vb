@@ -22,9 +22,103 @@ Partial Class Employers
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.idbox = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(518, 27)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(143, 55)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Search"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(329, 256)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(143, 55)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Update"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(518, 256)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(143, 55)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Delete"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(96, 256)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(143, 55)
+        Me.Button4.TabIndex = 3
+        Me.Button4.Text = "Add"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(96, 100)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 37
+        Me.DataGridView1.Size = New System.Drawing.Size(565, 150)
+        Me.DataGridView1.TabIndex = 4
+        '
+        'idbox
+        '
+        Me.idbox.Location = New System.Drawing.Point(231, 39)
+        Me.idbox.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.idbox.Name = "idbox"
+        Me.idbox.Size = New System.Drawing.Size(252, 35)
+        Me.idbox.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(86, 39)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(118, 24)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "ID Number"
+        '
+        'Employers
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.idbox)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Name = "Employers"
         Me.Text = "Employers"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents idbox As TextBox
+    Friend WithEvents Label1 As Label
 End Class
