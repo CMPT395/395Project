@@ -112,6 +112,9 @@
     <EmbeddedResource Include="Action_CTRL.resx">
       <DependentUpon>Action_CTRL.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employers.resx">
+      <DependentUpon>Employers.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>

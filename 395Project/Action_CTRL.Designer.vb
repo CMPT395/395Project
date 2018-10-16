@@ -82,7 +82,7 @@ Partial Class Action_CTRL
         Me.Controls.Add(Me.Employers)
         Me.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
         Me.Name = "Action_CTRL"
-        Me.Text = "EmployeeAction"
+        Me.Text = "ManagerAction"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

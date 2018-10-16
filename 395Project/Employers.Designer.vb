@@ -43,7 +43,7 @@ Partial Class Employers
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(329, 256)
+        Me.Button2.Location = New System.Drawing.Point(308, 256)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(143, 55)
         Me.Button2.TabIndex = 1
@@ -107,7 +107,7 @@ Partial Class Employers
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Employers"
-        Me.Text = "Employers"
+        Me.Text = " "
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
