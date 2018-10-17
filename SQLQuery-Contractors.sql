@@ -12,8 +12,8 @@ SET ANSI_PADDING ON
 GO
 
 CREATE TABLE [dbo].[Contractors](
-	[CID] [int] NOT NULL,
-	[EID] [int] NOT NULL,
+	[CID] [int] IDENTITY(1,1) NOT NULL,
+	[ClientID] [int] NULL,
 	[FName] [varchar](50) NULL,
 	[LName] [varchar](50) NULL,
 	[Cemail] [varchar](50) NULL,
@@ -30,17 +30,17 @@ GO
 
 
 INSERT INTO Contractors
-VALUES(1, 1, 'a', 'a', 'contractor1@gmail.com');
+VALUES( 3, 'a', 'a', 'contractor1@gmail.com');
 INSERT INTO Contractors
-VALUES(2, 2, 'b', 'b', 'contractor2@gmail.com');
+VALUES( 4, 'b', 'b', 'contractor2@gmail.com');
 INSERT INTO Contractors
-VALUES(3, 3, 'c', 'c', 'contractor3@gmail.com');
+VALUES( 2, 'c', 'c', 'contractor3@gmail.com');
 INSERT INTO Contractors
-VALUES(4, 4, 'd', 'd', 'contractor4@gmail.com');
+VALUES( 1, 'd', 'd', 'contractor4@gmail.com');
 INSERT INTO Contractors
-VALUES(5, 5, 'e', 'e', 'contractor5@gmail.com');
+VALUES( null, 'e', 'e', 'contractor5@gmail.com');
 INSERT INTO Contractors
-VALUES(6, 6, 'f', 'f', 'contractor6@gmail.com');
+VALUES( null, 'f', 'f', 'contractor6@gmail.com');
 
 
 

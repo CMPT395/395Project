@@ -11,7 +11,7 @@ GO
 CREATE TABLE [dbo].[Bill](
 	[BID] [int] IDENTITY(1,1) NOT NULL,
 	[CID] [int] NOT NULL,
-	[EID] [int] NOT NULL,
+	[ClientID] [int] NOT NULL,
 	[Total_month] [int] NULL,
 	[Hours] [int] NULL,
 	[Amount] [int] NULL,
