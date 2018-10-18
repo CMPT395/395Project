@@ -78,10 +78,22 @@
     <Compile Include="Action_CTRL.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employers.Designer.vb">
-      <DependentUpon>Employers.vb</DependentUpon>
+    <Compile Include="Client.Designer.vb">
+      <DependentUpon>Client.vb</DependentUpon>
     </Compile>
-    <Compile Include="Employers.vb">
+    <Compile Include="Client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Constractor.Designer.vb">
+      <DependentUpon>Constractor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Constractor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract.Designer.vb">
+      <DependentUpon>Contract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Sqlcon.vb" />
@@ -112,8 +124,14 @@
     <EmbeddedResource Include="Action_CTRL.resx">
       <DependentUpon>Action_CTRL.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employers.resx">
-      <DependentUpon>Employers.vb</DependentUpon>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Constractor.resx">
+      <DependentUpon>Constractor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract.resx">
+      <DependentUpon>Contract.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

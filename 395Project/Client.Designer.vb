@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Employers
+Partial Class Client
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
@@ -94,11 +94,11 @@ Partial Class Employers
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "ID Number"
         '
-        'Employers
+        'Client
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(728, 354)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.idbox)
         Me.Controls.Add(Me.DataGridView1)
@@ -106,8 +106,8 @@ Partial Class Employers
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "Employers"
-        Me.Text = " "
+        Me.Name = "Client"
+        Me.Text = " Client"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
