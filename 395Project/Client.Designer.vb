@@ -34,7 +34,7 @@ Partial Class Client
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.Location = New System.Drawing.Point(475, 24)
+        Me.Button1.Location = New System.Drawing.Point(830, 21)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(131, 48)
         Me.Button1.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class Client
         'Button2
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button2.Location = New System.Drawing.Point(282, 224)
+        Me.Button2.Location = New System.Drawing.Point(524, 425)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(131, 48)
         Me.Button2.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class Client
         'Button3
         '
         Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button3.Location = New System.Drawing.Point(475, 224)
+        Me.Button3.Location = New System.Drawing.Point(717, 425)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(131, 48)
         Me.Button3.TabIndex = 2
@@ -64,7 +64,7 @@ Partial Class Client
         'Button4
         '
         Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button4.Location = New System.Drawing.Point(88, 224)
+        Me.Button4.Location = New System.Drawing.Point(330, 425)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(131, 48)
         Me.Button4.TabIndex = 3
@@ -74,28 +74,30 @@ Partial Class Client
         'DataGridView1
         '
         Me.DataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(88, 88)
+        Me.DataGridView1.Location = New System.Drawing.Point(184, 89)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(518, 131)
+        Me.DataGridView1.Size = New System.Drawing.Size(777, 330)
         Me.DataGridView1.TabIndex = 4
         '
         'searchbox
         '
         Me.searchbox.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.searchbox.Location = New System.Drawing.Point(88, 34)
+        Me.searchbox.Location = New System.Drawing.Point(184, 32)
         Me.searchbox.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
         Me.searchbox.Name = "searchbox"
-        Me.searchbox.Size = New System.Drawing.Size(355, 31)
+        Me.searchbox.Size = New System.Drawing.Size(616, 31)
         Me.searchbox.TabIndex = 5
         Me.searchbox.Text = "Searching field"
+        Me.searchbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Client
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(670, 314)
+        Me.ClientSize = New System.Drawing.Size(1139, 564)
         Me.Controls.Add(Me.searchbox)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button4)

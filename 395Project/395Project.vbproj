@@ -96,6 +96,7 @@
     <Compile Include="Contract.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="resize.vb" />
     <Compile Include="Sqlcon.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>

@@ -40,4 +40,8 @@ Public Class Client
             MsgBox("Deleted")
         End If
     End Sub
+
+    Private Sub searchbox_TextChanged(sender As Object, e As EventArgs) Handles searchbox.TextChanged
+
+    End Sub
 End Class
