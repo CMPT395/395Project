@@ -96,6 +96,18 @@
     <Compile Include="Contract.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Contract_add.Designer.vb">
+      <DependentUpon>Contract_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract_update.Designer.vb">
+      <DependentUpon>Contract_update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contract_update.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="resize.vb" />
     <Compile Include="Sqlcon.vb" />
     <Compile Include="Login.vb">
@@ -133,6 +145,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Contract.resx">
       <DependentUpon>Contract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_add.resx">
+      <DependentUpon>Contract_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract_update.resx">
+      <DependentUpon>Contract_update.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
