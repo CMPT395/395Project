@@ -78,6 +78,12 @@
     <Compile Include="Action_CTRL.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddClient.Designer.vb">
+      <DependentUpon>AddClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Employers.Designer.vb">
       <DependentUpon>Employers.vb</DependentUpon>
     </Compile>
@@ -111,6 +117,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Action_CTRL.resx">
       <DependentUpon>Action_CTRL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClient.resx">
+      <DependentUpon>AddClient.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

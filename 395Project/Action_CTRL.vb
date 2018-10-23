@@ -16,4 +16,10 @@
         Employers.Show()
 
     End Sub
+
+    Private Sub addClientButton_Click(sender As Object, e As EventArgs) Handles addClientButton.Click
+        AddClient.Show()
+        Me.Hide()
+
+    End Sub
 End Class
