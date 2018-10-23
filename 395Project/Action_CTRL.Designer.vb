@@ -31,21 +31,21 @@ Partial Class Action_CTRL
         'Employers
         '
         Me.Employers.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Employers.Location = New System.Drawing.Point(203, 162)
-        Me.Employers.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.Employers.Location = New System.Drawing.Point(186, 142)
+        Me.Employers.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Employers.Name = "Employers"
-        Me.Employers.Size = New System.Drawing.Size(223, 52)
+        Me.Employers.Size = New System.Drawing.Size(204, 46)
         Me.Employers.TabIndex = 3
-        Me.Employers.Text = "Manage Employers"
+        Me.Employers.Text = "Manage Client"
         Me.Employers.UseVisualStyleBackColor = True
         '
         'back
         '
         Me.back.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.back.Location = New System.Drawing.Point(43, 37)
-        Me.back.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.back.Location = New System.Drawing.Point(39, 32)
+        Me.back.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.back.Name = "back"
-        Me.back.Size = New System.Drawing.Size(151, 43)
+        Me.back.Size = New System.Drawing.Size(138, 38)
         Me.back.TabIndex = 4
         Me.back.Text = "Sign Out"
         Me.back.UseVisualStyleBackColor = True
@@ -53,34 +53,34 @@ Partial Class Action_CTRL
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(377, 46)
+        Me.Label2.Location = New System.Drawing.Point(346, 40)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(154, 24)
+        Me.Label2.Size = New System.Drawing.Size(142, 21)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "manager name"
         '
         'Constructors
         '
         Me.Constructors.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Constructors.Location = New System.Drawing.Point(203, 239)
-        Me.Constructors.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.Constructors.Location = New System.Drawing.Point(186, 209)
+        Me.Constructors.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Constructors.Name = "Constructors"
-        Me.Constructors.Size = New System.Drawing.Size(223, 47)
+        Me.Constructors.Size = New System.Drawing.Size(204, 41)
         Me.Constructors.TabIndex = 8
         Me.Constructors.Text = "Manage Constructors"
         Me.Constructors.UseVisualStyleBackColor = True
         '
         'Action_CTRL
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(677, 521)
+        Me.ClientSize = New System.Drawing.Size(621, 456)
         Me.Controls.Add(Me.Constructors)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.back)
         Me.Controls.Add(Me.Employers)
-        Me.Margin = New System.Windows.Forms.Padding(7, 5, 7, 5)
+        Me.Margin = New System.Windows.Forms.Padding(6, 4, 6, 4)
         Me.Name = "Action_CTRL"
         Me.Text = "ManagerAction"
         Me.ResumeLayout(False)

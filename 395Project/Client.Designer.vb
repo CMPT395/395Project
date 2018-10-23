@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Client
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,87 +20,83 @@ Partial Class Client
     '注意: 以下过程是 Windows 窗体设计器所必需的
     '可以使用 Windows 窗体设计器修改它。  
     '不要使用代码编辑器修改它。
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.idbox = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.searchbox = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(518, 27)
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button1.Location = New System.Drawing.Point(475, 24)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(143, 55)
+        Me.Button1.Size = New System.Drawing.Size(131, 48)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Search"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(308, 256)
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button2.Location = New System.Drawing.Point(282, 224)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(143, 55)
+        Me.Button2.Size = New System.Drawing.Size(131, 48)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Update"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(518, 256)
+        Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button3.Location = New System.Drawing.Point(475, 224)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(143, 55)
+        Me.Button3.Size = New System.Drawing.Size(131, 48)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Delete"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(96, 256)
+        Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button4.Location = New System.Drawing.Point(88, 224)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(143, 55)
+        Me.Button4.Size = New System.Drawing.Size(131, 48)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
+        Me.DataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(96, 100)
+        Me.DataGridView1.Location = New System.Drawing.Point(88, 88)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(565, 150)
+        Me.DataGridView1.Size = New System.Drawing.Size(518, 131)
         Me.DataGridView1.TabIndex = 4
         '
-        'idbox
+        'searchbox
         '
-        Me.idbox.Location = New System.Drawing.Point(231, 39)
-        Me.idbox.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
-        Me.idbox.Name = "idbox"
-        Me.idbox.Size = New System.Drawing.Size(252, 35)
-        Me.idbox.TabIndex = 5
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(86, 39)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(118, 24)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "ID Number"
+        Me.searchbox.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.searchbox.Location = New System.Drawing.Point(88, 34)
+        Me.searchbox.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.searchbox.Name = "searchbox"
+        Me.searchbox.Size = New System.Drawing.Size(355, 31)
+        Me.searchbox.TabIndex = 5
+        Me.searchbox.Text = "Searching field"
         '
         'Client
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(728, 354)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.idbox)
+        Me.ClientSize = New System.Drawing.Size(670, 314)
+        Me.Controls.Add(Me.searchbox)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -119,6 +115,5 @@ Partial Class Client
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents idbox As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents searchbox As TextBox
 End Class

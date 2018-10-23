@@ -13,7 +13,7 @@
 
     Private Sub Employers_Click(sender As Object, e As EventArgs) Handles Employers.Click
         Me.Hide()
-        Employers.Show()
+        Client.Show()
 
     End Sub
 End Class
