@@ -38,3 +38,14 @@ INSERT INTO Client
 VALUES('ddd', 'thirdparty4@gmail.com');
 INSERT INTO Client
 VALUES( 'eee', 'thirdparty5@gmail.com');
+
+
+create proc searchClient(
+@idsearcg int,
+@searchbox varchar(20)
+)
+as
+select * from Client 
+where ClientID = @idsearcg or Name = @searchbox or Pemail =@searchbox;
+
+searchClient 2,'aaa'
