@@ -49,3 +49,14 @@ select * from Client
 where ClientID = @idsearcg or Name = @searchbox or Pemail =@searchbox;
 
 searchClient 2,'aaa'
+
+
+create proc addClient(
+@name varchar(20),
+@email varchar(20)
+)
+as
+INSERT INTO Client
+VALUES(@name, @email);
+
+addClient 'test', 'test@test.com'

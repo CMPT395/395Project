@@ -78,6 +78,7 @@
     <Compile Include="Action_CTRL.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddClient.Designer.vb" />
     <Compile Include="Client.Designer.vb">
       <DependentUpon>Client.vb</DependentUpon>
     </Compile>
@@ -94,6 +95,12 @@
       <DependentUpon>Contract.vb</DependentUpon>
     </Compile>
     <Compile Include="Contract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewClient.Designer.vb">
+      <DependentUpon>NewClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewClient.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="resize.vb" />
@@ -142,6 +149,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewClient.resx">
+      <DependentUpon>NewClient.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

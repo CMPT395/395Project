@@ -56,4 +56,10 @@ Public Class Client
         DataGridView1.MultiSelect = False
         DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.Close()
+        NewClient.Show()
+
+    End Sub
 End Class
