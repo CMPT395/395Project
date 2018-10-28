@@ -16,6 +16,9 @@
         Client.Show()
         login.SQL.ExecQuery("select * from Client")
         Client.DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
+        Client.DataGridView1.Columns(0).ReadOnly = True ' restricted the Client ID cannot be changed
+        Client.DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells ' auto size the cells in dataview
+
 
     End Sub
 End Class

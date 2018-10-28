@@ -55,6 +55,8 @@ Public Class Client
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         DataGridView1.MultiSelect = False
         DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click

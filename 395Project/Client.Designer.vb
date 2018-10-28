@@ -29,8 +29,9 @@ Partial Class Client
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.searchbox = New System.Windows.Forms.TextBox()
         Me.Back = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -80,18 +81,17 @@ Partial Class Client
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(184, 89)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(814, 330)
+        Me.DataGridView1.Size = New System.Drawing.Size(777, 330)
         Me.DataGridView1.TabIndex = 4
         '
         'searchbox
         '
         Me.searchbox.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.searchbox.Location = New System.Drawing.Point(330, 32)
+        Me.searchbox.Location = New System.Drawing.Point(290, 32)
         Me.searchbox.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
         Me.searchbox.Name = "searchbox"
-        Me.searchbox.Size = New System.Drawing.Size(471, 31)
+        Me.searchbox.Size = New System.Drawing.Size(511, 31)
         Me.searchbox.TabIndex = 5
         '
         'Back
@@ -104,20 +104,22 @@ Partial Class Client
         Me.Back.Text = "Back"
         Me.Back.UseVisualStyleBackColor = True
         '
-        'Label1
+        'PictureBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(218, 35)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 21)
-        Me.Label1.TabIndex = 7
+        Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.s
+        Me.PictureBox1.Location = New System.Drawing.Point(224, 22)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(61, 51)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
         '
         'Client
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1139, 564)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.searchbox)
         Me.Controls.Add(Me.DataGridView1)
@@ -128,6 +130,7 @@ Partial Class Client
         Me.Name = "Client"
         Me.Text = " Client"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -140,5 +143,5 @@ Partial Class Client
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents searchbox As TextBox
     Friend WithEvents Back As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
