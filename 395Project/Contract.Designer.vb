@@ -22,100 +22,131 @@ Partial Class Contract
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.idbox = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Back = New System.Windows.Forms.Button()
+        Me.searchbox = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'PictureBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(113, 95)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(190, 24)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Contract Number"
+        Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.s
+        Me.PictureBox1.Location = New System.Drawing.Point(147, 45)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(33, 29)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
         '
-        'idbox
+        'Back
         '
-        Me.idbox.Location = New System.Drawing.Point(322, 92)
-        Me.idbox.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
-        Me.idbox.Name = "idbox"
-        Me.idbox.Size = New System.Drawing.Size(174, 35)
-        Me.idbox.TabIndex = 12
+        Me.Back.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Back.Location = New System.Drawing.Point(54, 45)
+        Me.Back.Margin = New System.Windows.Forms.Padding(2)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(71, 27)
+        Me.Back.TabIndex = 14
+        Me.Back.Text = "Back"
+        Me.Back.UseVisualStyleBackColor = True
+        '
+        'searchbox
+        '
+        Me.searchbox.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.searchbox.Location = New System.Drawing.Point(183, 50)
+        Me.searchbox.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
+        Me.searchbox.Name = "searchbox"
+        Me.searchbox.Size = New System.Drawing.Size(281, 21)
+        Me.searchbox.TabIndex = 13
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(123, 156)
+        Me.DataGridView1.Location = New System.Drawing.Point(125, 83)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(565, 150)
-        Me.DataGridView1.TabIndex = 11
+        Me.DataGridView1.Size = New System.Drawing.Size(424, 189)
+        Me.DataGridView1.TabIndex = 12
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(123, 312)
+        Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button4.Location = New System.Drawing.Point(205, 275)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(143, 55)
-        Me.Button4.TabIndex = 10
+        Me.Button4.Size = New System.Drawing.Size(71, 27)
+        Me.Button4.TabIndex = 11
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(545, 312)
+        Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button3.Location = New System.Drawing.Point(416, 275)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(143, 55)
-        Me.Button3.TabIndex = 9
+        Me.Button3.Size = New System.Drawing.Size(71, 27)
+        Me.Button3.TabIndex = 10
         Me.Button3.Text = "Delete"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(335, 312)
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button2.Location = New System.Drawing.Point(311, 275)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(143, 55)
-        Me.Button2.TabIndex = 8
+        Me.Button2.Size = New System.Drawing.Size(71, 27)
+        Me.Button2.TabIndex = 9
         Me.Button2.Text = "Update"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(545, 83)
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button1.Location = New System.Drawing.Point(478, 44)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(143, 55)
-        Me.Button1.TabIndex = 7
+        Me.Button1.Size = New System.Drawing.Size(71, 27)
+        Me.Button1.TabIndex = 8
         Me.Button1.Text = "Search"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Contract
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.idbox)
+        Me.ClientSize = New System.Drawing.Size(603, 347)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Back)
+        Me.Controls.Add(Me.searchbox)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Contract"
         Me.Text = "Contract"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents idbox As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Back As Button
+    Friend WithEvents searchbox As TextBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
