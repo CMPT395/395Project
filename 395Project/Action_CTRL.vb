@@ -22,17 +22,12 @@
 
     End Sub
 
-    Private Sub Constructors_Click(sender As Object, e As EventArgs) Handles Constructors.Click
-
-    End Sub
-
-    Private Sub Contract_Click(sender As Object, e As EventArgs) Handles Contract.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Contract.Show()
         login.SQL.ExecQuery("select * from Contracts")
-        'Contract.DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
-        'Contract.DataGridView1.Columns(0).ReadOnly = True ' restricted the Client ID cannot be changed
-        'Contract.DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells ' auto size the cells in dataview
-
+        Contract.DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
+        Contract.DataGridView1.Columns(0).ReadOnly = True ' restricted the Client ID cannot be changed
+        Contract.DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells ' auto size the cells in dataview
     End Sub
 End Class
