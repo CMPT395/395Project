@@ -35,10 +35,4 @@
         'Contract.DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells ' auto size the cells in dataview
 
     End Sub
-
-    Private Sub addClientButton_Click(sender As Object, e As EventArgs) Handles addClientButton.Click
-        AddClient.Show()
-        Me.Hide()
-
-    End Sub
 End Class

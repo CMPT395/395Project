@@ -78,15 +78,11 @@
     <Compile Include="Action_CTRL.vb">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="AddClient.Designer.vb" />
-=======
->>>>>>> New-Login-
     <Compile Include="Client.Designer.vb">
       <DependentUpon>Client.vb</DependentUpon>
     </Compile>
     <Compile Include="Client.vb">
-<<<<<<< HEAD
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Constractor.Designer.vb">
@@ -111,35 +107,16 @@
       <DependentUpon>NewContract.vb</DependentUpon>
     </Compile>
     <Compile Include="NewContract.vb">
-=======
->>>>>>> New-Login-
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Constractor.Designer.vb">
-      <DependentUpon>Constractor.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Constractor.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Contract.Designer.vb">
-      <DependentUpon>Contract.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Contract.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="..\..\New folder\Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
-      <Link>New folder\Login.Designer.vb</Link>
-    </Compile>
-    <Compile Include="..\..\New folder\Login.vb">
-      <SubType>Form</SubType>
-      <Link>New folder\Login.vb</Link>
-    </Compile>
-    <Compile Include="New folder\Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
-    </Compile>
-    <Compile Include="resize.vb" />
     <Compile Include="Sqlcon.vb" />
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -168,12 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Contract.resx">
       <DependentUpon>Contract.vb</DependentUpon>
-<<<<<<< HEAD
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
-=======
->>>>>>> New-Login-
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -181,20 +155,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="NewClient.resx">
       <DependentUpon>NewClient.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewContract.resx">
       <DependentUpon>NewContract.vb</DependentUpon>
-=======
-    <EmbeddedResource Include="..\..\New folder\Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
-      <Link>New folder\Login.resx</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="New folder\Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
->>>>>>> New-Login-
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
