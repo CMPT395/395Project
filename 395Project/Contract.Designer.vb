@@ -37,7 +37,7 @@ Partial Class Contract
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.s
-        Me.PictureBox1.Location = New System.Drawing.Point(147, 45)
+        Me.PictureBox1.Location = New System.Drawing.Point(129, 34)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(33, 29)
@@ -48,7 +48,7 @@ Partial Class Contract
         'Back
         '
         Me.Back.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Back.Location = New System.Drawing.Point(54, 45)
+        Me.Back.Location = New System.Drawing.Point(54, 34)
         Me.Back.Margin = New System.Windows.Forms.Padding(2)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(71, 27)
@@ -59,7 +59,7 @@ Partial Class Contract
         'searchbox
         '
         Me.searchbox.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.searchbox.Location = New System.Drawing.Point(183, 50)
+        Me.searchbox.Location = New System.Drawing.Point(179, 42)
         Me.searchbox.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.searchbox.Name = "searchbox"
         Me.searchbox.Size = New System.Drawing.Size(281, 21)
@@ -70,17 +70,17 @@ Partial Class Contract
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(125, 83)
+        Me.DataGridView1.Location = New System.Drawing.Point(91, 67)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(424, 189)
+        Me.DataGridView1.Size = New System.Drawing.Size(495, 205)
         Me.DataGridView1.TabIndex = 12
         '
         'Button4
         '
         Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button4.Location = New System.Drawing.Point(205, 275)
+        Me.Button4.Location = New System.Drawing.Point(129, 276)
         Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(71, 27)
@@ -91,7 +91,7 @@ Partial Class Contract
         'Button3
         '
         Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button3.Location = New System.Drawing.Point(416, 275)
+        Me.Button3.Location = New System.Drawing.Point(458, 276)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(71, 27)
@@ -102,7 +102,7 @@ Partial Class Contract
         'Button2
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button2.Location = New System.Drawing.Point(311, 275)
+        Me.Button2.Location = New System.Drawing.Point(300, 276)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(71, 27)
@@ -113,7 +113,7 @@ Partial Class Contract
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.Location = New System.Drawing.Point(478, 44)
+        Me.Button1.Location = New System.Drawing.Point(478, 34)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(71, 27)
@@ -134,7 +134,7 @@ Partial Class Contract
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Contract"
         Me.Text = "Contract"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -103,7 +103,12 @@
     <Compile Include="NewClient.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="resize.vb" />
+    <Compile Include="NewContract.Designer.vb">
+      <DependentUpon>NewContract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Sqlcon.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
@@ -152,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewClient.resx">
       <DependentUpon>NewClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewContract.resx">
+      <DependentUpon>NewContract.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
