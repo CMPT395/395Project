@@ -8,26 +8,6 @@ Public Class login
     Public idshow As String
     Public empname As String
 
-<<<<<<< HEAD
-    Private Function MLog() As Boolean
-        If SQL.DBDS IsNot Nothing Then
-            SQL.DBDS.Clear()
-        End If
-        If Len(idbox.Text) <> 0! Or Len(passwordbox.Text) <> 0! Then
-            SQL.ExecQuery("SELECT Count(Username) As userCount FROM Manager WHERE Username COLLATE Latin1_General_CS_AS='" & idbox.Text &
-            "' AND Passward COLLATE Latin1_General_CS_AS ='" & passwordbox.Text & "'")
-            If SQL.DBDS.Tables(0).Rows(0).Item("userCount") = 1 Then
-                '
-                Return True
-            End If
-            MsgBox("Invalid id or password", MsgBoxStyle.Critical, "Failed!")
-            Return False
-        End If
-        MsgBox("you entered nothing")
-        Return False
-    End Function
-=======
->>>>>>> New-Login-
 
     Private Sub MLOGIN_Click(sender As Object, e As EventArgs) Handles MLOGIN.Click
         If SQL.HasConnection = True Then
