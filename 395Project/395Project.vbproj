@@ -132,6 +132,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="updateConctractor.Designer.vb">
+      <DependentUpon>updateConctractor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateConctractor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ViewContractor.Designer.vb">
       <DependentUpon>ViewContractor.vb</DependentUpon>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewContractor.resx">
       <DependentUpon>NewContractor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateConctractor.resx">
+      <DependentUpon>updateConctractor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewContractor.resx">
       <DependentUpon>ViewContractor.vb</DependentUpon>

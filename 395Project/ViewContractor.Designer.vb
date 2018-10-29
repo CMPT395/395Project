@@ -29,6 +29,13 @@ Partial Class ViewContractor
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.viewFirstNameLabel = New System.Windows.Forms.Label()
+        Me.viewLastNameLabel = New System.Windows.Forms.Label()
+        Me.viewIDLabel = New System.Windows.Forms.Label()
+        Me.viewContractLengthLabel = New System.Windows.Forms.Label()
+        Me.viewRateOfPayLabel = New System.Windows.Forms.Label()
+        Me.viewEmailLabel = New System.Windows.Forms.Label()
+        Me.emailLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -43,7 +50,7 @@ Partial Class ViewContractor
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(45, 87)
+        Me.Label2.Location = New System.Drawing.Point(45, 92)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(118, 23)
         Me.Label2.TabIndex = 1
@@ -54,14 +61,14 @@ Partial Class ViewContractor
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(45, 188)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(118, 23)
+        Me.Label3.Size = New System.Drawing.Size(57, 23)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "CID:"
         '
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(294, 87)
+        Me.Label4.Location = New System.Drawing.Point(313, 92)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(118, 23)
         Me.Label4.TabIndex = 3
@@ -70,7 +77,7 @@ Partial Class ViewContractor
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(294, 202)
+        Me.Label5.Location = New System.Drawing.Point(294, 188)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(150, 23)
         Me.Label5.TabIndex = 4
@@ -94,11 +101,81 @@ Partial Class ViewContractor
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'viewFirstNameLabel
+        '
+        Me.viewFirstNameLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.viewFirstNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewFirstNameLabel.Location = New System.Drawing.Point(169, 92)
+        Me.viewFirstNameLabel.Name = "viewFirstNameLabel"
+        Me.viewFirstNameLabel.Size = New System.Drawing.Size(135, 23)
+        Me.viewFirstNameLabel.TabIndex = 7
+        '
+        'viewLastNameLabel
+        '
+        Me.viewLastNameLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.viewLastNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewLastNameLabel.Location = New System.Drawing.Point(475, 92)
+        Me.viewLastNameLabel.Name = "viewLastNameLabel"
+        Me.viewLastNameLabel.Size = New System.Drawing.Size(135, 23)
+        Me.viewLastNameLabel.TabIndex = 8
+        '
+        'viewIDLabel
+        '
+        Me.viewIDLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.viewIDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewIDLabel.Location = New System.Drawing.Point(121, 188)
+        Me.viewIDLabel.Name = "viewIDLabel"
+        Me.viewIDLabel.Size = New System.Drawing.Size(135, 23)
+        Me.viewIDLabel.TabIndex = 9
+        '
+        'viewContractLengthLabel
+        '
+        Me.viewContractLengthLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.viewContractLengthLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewContractLengthLabel.Location = New System.Drawing.Point(475, 193)
+        Me.viewContractLengthLabel.Name = "viewContractLengthLabel"
+        Me.viewContractLengthLabel.Size = New System.Drawing.Size(135, 23)
+        Me.viewContractLengthLabel.TabIndex = 10
+        '
+        'viewRateOfPayLabel
+        '
+        Me.viewRateOfPayLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.viewRateOfPayLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewRateOfPayLabel.Location = New System.Drawing.Point(217, 271)
+        Me.viewRateOfPayLabel.Name = "viewRateOfPayLabel"
+        Me.viewRateOfPayLabel.Size = New System.Drawing.Size(135, 23)
+        Me.viewRateOfPayLabel.TabIndex = 11
+        '
+        'viewEmailLabel
+        '
+        Me.viewEmailLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.viewEmailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewEmailLabel.Location = New System.Drawing.Point(545, 271)
+        Me.viewEmailLabel.Name = "viewEmailLabel"
+        Me.viewEmailLabel.Size = New System.Drawing.Size(190, 23)
+        Me.viewEmailLabel.TabIndex = 12
+        '
+        'emailLabel
+        '
+        Me.emailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailLabel.Location = New System.Drawing.Point(386, 271)
+        Me.emailLabel.Name = "emailLabel"
+        Me.emailLabel.Size = New System.Drawing.Size(117, 23)
+        Me.emailLabel.TabIndex = 13
+        Me.emailLabel.Text = "Email:"
+        '
         'ViewContractor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.emailLabel)
+        Me.Controls.Add(Me.viewEmailLabel)
+        Me.Controls.Add(Me.viewRateOfPayLabel)
+        Me.Controls.Add(Me.viewContractLengthLabel)
+        Me.Controls.Add(Me.viewIDLabel)
+        Me.Controls.Add(Me.viewLastNameLabel)
+        Me.Controls.Add(Me.viewFirstNameLabel)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -119,4 +196,11 @@ Partial Class ViewContractor
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents viewFirstNameLabel As Label
+    Friend WithEvents viewLastNameLabel As Label
+    Friend WithEvents viewIDLabel As Label
+    Friend WithEvents viewContractLengthLabel As Label
+    Friend WithEvents viewRateOfPayLabel As Label
+    Friend WithEvents viewEmailLabel As Label
+    Friend WithEvents emailLabel As Label
 End Class

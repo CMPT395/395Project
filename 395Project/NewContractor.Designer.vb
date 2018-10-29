@@ -25,7 +25,6 @@ Partial Class NewContractor
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -34,7 +33,6 @@ Partial Class NewContractor
         Me.conFirstNameText = New System.Windows.Forms.TextBox()
         Me.conLastNameText = New System.Windows.Forms.TextBox()
         Me.conEmailText = New System.Windows.Forms.TextBox()
-        Me.conEmployerText = New System.Windows.Forms.TextBox()
         Me.conPayText = New System.Windows.Forms.TextBox()
         Me.contractLengthText = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
@@ -65,15 +63,6 @@ Partial Class NewContractor
         Me.Label3.Size = New System.Drawing.Size(143, 37)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Last Name:"
-        '
-        'Label4
-        '
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(382, 189)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(143, 37)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Employer:"
         '
         'Label5
         '
@@ -141,13 +130,6 @@ Partial Class NewContractor
         Me.conEmailText.Size = New System.Drawing.Size(165, 22)
         Me.conEmailText.TabIndex = 12
         '
-        'conEmployerText
-        '
-        Me.conEmployerText.Location = New System.Drawing.Point(504, 189)
-        Me.conEmployerText.Name = "conEmployerText"
-        Me.conEmployerText.Size = New System.Drawing.Size(165, 22)
-        Me.conEmployerText.TabIndex = 13
-        '
         'conPayText
         '
         Me.conPayText.Location = New System.Drawing.Point(175, 288)
@@ -169,7 +151,6 @@ Partial Class NewContractor
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.contractLengthText)
         Me.Controls.Add(Me.conPayText)
-        Me.Controls.Add(Me.conEmployerText)
         Me.Controls.Add(Me.conEmailText)
         Me.Controls.Add(Me.conLastNameText)
         Me.Controls.Add(Me.conFirstNameText)
@@ -178,7 +159,6 @@ Partial Class NewContractor
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -192,7 +172,6 @@ Partial Class NewContractor
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label8 As Label
@@ -201,7 +180,6 @@ Partial Class NewContractor
     Friend WithEvents conFirstNameText As TextBox
     Friend WithEvents conLastNameText As TextBox
     Friend WithEvents conEmailText As TextBox
-    Friend WithEvents conEmployerText As TextBox
     Friend WithEvents conPayText As TextBox
     Friend WithEvents contractLengthText As TextBox
 End Class

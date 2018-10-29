@@ -30,6 +30,7 @@ Partial Class Contractor
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.backButton = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,7 +84,7 @@ Partial Class Contractor
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(241, 340)
+        Me.Button2.Location = New System.Drawing.Point(183, 340)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(95, 37)
@@ -110,11 +111,21 @@ Partial Class Contractor
         Me.backButton.Text = "Back"
         Me.backButton.UseVisualStyleBackColor = True
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(322, 340)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(104, 36)
+        Me.Button5.TabIndex = 15
+        Me.Button5.Text = "View"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'Contractor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(627, 408)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.backButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.idbox)
@@ -140,4 +151,5 @@ Partial Class Contractor
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents backButton As Button
+    Friend WithEvents Button5 As Button
 End Class

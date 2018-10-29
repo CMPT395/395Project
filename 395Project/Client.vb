@@ -23,23 +23,33 @@ Public Class Client
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim intResult As Integer
-        intResult = MessageBox.Show("You sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
-        If intResult = DialogResult.OK Then
-            Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
-            login.SQL.DBDA.Update(login.SQL.DBDS)
-            MsgBox("Changes updated!")
+        If (DataGridView1.SelectedCells.Count > 0) Then
+            intResult = MessageBox.Show("You sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
+            If intResult = DialogResult.OK Then
+                Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
+                login.SQL.DBDA.Update(login.SQL.DBDS)
+                MsgBox("Changes updated!")
+            Else
+                MessageBox.Show("Please make a selection before removing")
+            End If
         End If
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim intResult As Integer
-        intResult = MessageBox.Show("You sure you want to cancel this order", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
-        If intResult = DialogResult.OK Then
-            DataGridView1.Rows.RemoveAt(DataGridView1.CurrentCell.RowIndex)
-            Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
-            login.SQL.DBDA.Update(login.SQL.DBDS)
-            MsgBox("Deleted")
+        If (DataGridView1.SelectedCells.Count > 0) Then
+            intResult = MessageBox.Show("You sure you want to cancel this order", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
+            If intResult = DialogResult.OK Then
+                DataGridView1.Rows.RemoveAt(DataGridView1.CurrentCell.RowIndex)
+                Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
+                login.SQL.DBDA.Update(login.SQL.DBDS)
+                MsgBox("Deleted")
+            Else
+                MessageBox.Show("Please make a selection before removing")
+            End If
         End If
+
     End Sub
 
     Private Sub searchbox_TextChanged(sender As Object, e As EventArgs) Handles searchbox.TextChanged
