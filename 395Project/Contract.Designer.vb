@@ -35,70 +35,76 @@ Partial Class Contract
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(113, 95)
+        Me.Label1.Location = New System.Drawing.Point(75, 63)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(190, 24)
+        Me.Label1.Size = New System.Drawing.Size(115, 17)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Contract Number"
         '
         'idbox
         '
-        Me.idbox.Location = New System.Drawing.Point(322, 92)
-        Me.idbox.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.idbox.Location = New System.Drawing.Point(215, 61)
+        Me.idbox.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.idbox.Name = "idbox"
-        Me.idbox.Size = New System.Drawing.Size(174, 35)
+        Me.idbox.Size = New System.Drawing.Size(117, 22)
         Me.idbox.TabIndex = 12
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(123, 156)
+        Me.DataGridView1.Location = New System.Drawing.Point(82, 104)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(565, 150)
+        Me.DataGridView1.Size = New System.Drawing.Size(377, 100)
         Me.DataGridView1.TabIndex = 11
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(123, 312)
+        Me.Button4.Location = New System.Drawing.Point(82, 208)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(143, 55)
+        Me.Button4.Size = New System.Drawing.Size(95, 37)
         Me.Button4.TabIndex = 10
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(545, 312)
+        Me.Button3.Location = New System.Drawing.Point(363, 208)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(143, 55)
+        Me.Button3.Size = New System.Drawing.Size(95, 37)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = "Delete"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(335, 312)
+        Me.Button2.Location = New System.Drawing.Point(223, 208)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(143, 55)
+        Me.Button2.Size = New System.Drawing.Size(95, 37)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "Update"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(545, 83)
+        Me.Button1.Location = New System.Drawing.Point(363, 55)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(143, 55)
+        Me.Button1.Size = New System.Drawing.Size(95, 37)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "Search"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Contract
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(533, 300)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.idbox)
         Me.Controls.Add(Me.DataGridView1)
@@ -106,6 +112,7 @@ Partial Class Contract
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Contract"
         Me.Text = "Contract"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

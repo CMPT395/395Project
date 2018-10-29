@@ -21,4 +21,14 @@
 
 
     End Sub
+
+    Private Sub Constructors_Click(sender As Object, e As EventArgs) Handles Constructors.Click
+        Me.Close()
+        Contractor.Show()
+
+    End Sub
+
+    Private Sub Action_CTRL_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

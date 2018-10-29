@@ -15,6 +15,7 @@
         Dim name, email As String
         name = TextBox1.Text.ToString
         email = TextBox2.Text.ToString
+        'change this to correct sql
         login.SQL.ExecQuery("AddClient '" + name + "','" + email + "'")
         MessageBox.Show("Add New Client Done")
         TextBox1.Clear()

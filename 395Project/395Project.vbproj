@@ -85,10 +85,10 @@
     <Compile Include="Client.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Constractor.Designer.vb">
-      <DependentUpon>Constractor.vb</DependentUpon>
+    <Compile Include="Contractor.Designer.vb">
+      <DependentUpon>Contractor.vb</DependentUpon>
     </Compile>
-    <Compile Include="Constractor.vb">
+    <Compile Include="Contractor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Contract.Designer.vb">
@@ -103,7 +103,12 @@
     <Compile Include="NewClient.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="resize.vb" />
+    <Compile Include="NewContractor.Designer.vb">
+      <DependentUpon>NewContractor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewContractor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Sqlcon.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
@@ -127,6 +132,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ViewContractor.Designer.vb">
+      <DependentUpon>ViewContractor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewContractor.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Action_CTRL.resx">
@@ -135,8 +146,8 @@
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Constractor.resx">
-      <DependentUpon>Constractor.vb</DependentUpon>
+    <EmbeddedResource Include="Contractor.resx">
+      <DependentUpon>Contractor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contract.resx">
       <DependentUpon>Contract.vb</DependentUpon>
@@ -152,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewClient.resx">
       <DependentUpon>NewClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewContractor.resx">
+      <DependentUpon>NewContractor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewContractor.resx">
+      <DependentUpon>ViewContractor.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -37,9 +37,10 @@ Partial Class Client
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.Location = New System.Drawing.Point(830, 21)
+        Me.Button1.Location = New System.Drawing.Point(604, 16)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(131, 48)
+        Me.Button1.Size = New System.Drawing.Size(95, 37)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Search"
         Me.Button1.UseVisualStyleBackColor = True
@@ -47,9 +48,10 @@ Partial Class Client
         'Button2
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button2.Location = New System.Drawing.Point(524, 425)
+        Me.Button2.Location = New System.Drawing.Point(381, 324)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(131, 48)
+        Me.Button2.Size = New System.Drawing.Size(95, 37)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Update"
         Me.Button2.UseVisualStyleBackColor = True
@@ -57,9 +59,10 @@ Partial Class Client
         'Button3
         '
         Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button3.Location = New System.Drawing.Point(717, 425)
+        Me.Button3.Location = New System.Drawing.Point(521, 324)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(131, 48)
+        Me.Button3.Size = New System.Drawing.Size(95, 37)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Delete"
         Me.Button3.UseVisualStyleBackColor = True
@@ -67,9 +70,10 @@ Partial Class Client
         'Button4
         '
         Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button4.Location = New System.Drawing.Point(330, 425)
+        Me.Button4.Location = New System.Drawing.Point(240, 324)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(131, 48)
+        Me.Button4.Size = New System.Drawing.Size(95, 37)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = True
@@ -79,27 +83,29 @@ Partial Class Client
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(184, 89)
+        Me.DataGridView1.Location = New System.Drawing.Point(134, 68)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(777, 330)
+        Me.DataGridView1.Size = New System.Drawing.Size(565, 251)
         Me.DataGridView1.TabIndex = 4
         '
         'searchbox
         '
         Me.searchbox.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.searchbox.Location = New System.Drawing.Point(290, 32)
-        Me.searchbox.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.searchbox.Location = New System.Drawing.Point(211, 24)
+        Me.searchbox.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.searchbox.Name = "searchbox"
-        Me.searchbox.Size = New System.Drawing.Size(511, 31)
+        Me.searchbox.Size = New System.Drawing.Size(373, 22)
         Me.searchbox.TabIndex = 5
         '
         'Back
         '
         Me.Back.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Back.Location = New System.Drawing.Point(54, 22)
+        Me.Back.Location = New System.Drawing.Point(39, 17)
+        Me.Back.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(131, 48)
+        Me.Back.Size = New System.Drawing.Size(95, 37)
         Me.Back.TabIndex = 6
         Me.Back.Text = "Back"
         Me.Back.UseVisualStyleBackColor = True
@@ -107,18 +113,19 @@ Partial Class Client
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.s
-        Me.PictureBox1.Location = New System.Drawing.Point(224, 22)
+        Me.PictureBox1.Location = New System.Drawing.Point(163, 17)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(61, 51)
+        Me.PictureBox1.Size = New System.Drawing.Size(44, 39)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
         '
         'Client
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1139, 564)
+        Me.ClientSize = New System.Drawing.Size(828, 430)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.searchbox)
@@ -127,6 +134,7 @@ Partial Class Client
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Client"
         Me.Text = " Client"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
