@@ -103,6 +103,12 @@
     <Compile Include="NewClient.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="NewContract.Designer.vb">
+      <DependentUpon>NewContract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NewContractor.Designer.vb">
       <DependentUpon>NewContractor.vb</DependentUpon>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewClient.resx">
       <DependentUpon>NewClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewContract.resx">
+      <DependentUpon>NewContract.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewContractor.resx">
       <DependentUpon>NewContractor.vb</DependentUpon>
