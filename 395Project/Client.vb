@@ -23,7 +23,7 @@ Public Class Client
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim intResult As Integer
-        intResult = MessageBox.Show("You sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
+        intResult = MessageBox.Show("Are you sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
         If intResult = DialogResult.OK Then
             Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
             login.SQL.DBDA.Update(login.SQL.DBDS)
@@ -33,7 +33,7 @@ Public Class Client
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim intResult As Integer
-        intResult = MessageBox.Show("You sure you want to cancel this order", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
+        intResult = MessageBox.Show("Delete this Client?", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
         If intResult = DialogResult.OK Then
             DataGridView1.Rows.RemoveAt(DataGridView1.CurrentCell.RowIndex)
             Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
