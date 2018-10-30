@@ -24,8 +24,8 @@ Partial Class NewClient
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.ClientName = New System.Windows.Forms.TextBox()
+        Me.Email = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Submit = New System.Windows.Forms.Button()
@@ -35,94 +35,94 @@ Partial Class NewClient
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("宋体", 14.14286!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(222, 28)
+        Me.Label1.Font = New System.Drawing.Font("SimSun", 14.14286!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Location = New System.Drawing.Point(187, 31)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(338, 34)
+        Me.Label1.Size = New System.Drawing.Size(378, 38)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Client Sign Up Form"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(180, 117)
+        Me.Label2.Location = New System.Drawing.Point(172, 157)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(131, 21)
+        Me.Label2.Size = New System.Drawing.Size(142, 24)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Client Name"
         '
-        'TextBox1
+        'ClientName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(348, 116)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(147, 31)
-        Me.TextBox1.TabIndex = 2
+        Me.ClientName.Location = New System.Drawing.Point(356, 156)
+        Me.ClientName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ClientName.Name = "ClientName"
+        Me.ClientName.Size = New System.Drawing.Size(160, 35)
+        Me.ClientName.TabIndex = 2
         '
-        'TextBox2
+        'Email
         '
-        Me.TextBox2.Location = New System.Drawing.Point(348, 180)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(147, 31)
-        Me.TextBox2.TabIndex = 4
+        Me.Email.Location = New System.Drawing.Point(356, 229)
+        Me.Email.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Email.Name = "Email"
+        Me.Email.Size = New System.Drawing.Size(160, 35)
+        Me.Email.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(211, 191)
+        Me.Label3.Location = New System.Drawing.Point(206, 241)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 21)
+        Me.Label3.Size = New System.Drawing.Size(70, 24)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Email"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(29, 24)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(51, 27)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(101, 37)
+        Me.Button1.Size = New System.Drawing.Size(110, 42)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Submit
         '
-        Me.Submit.Location = New System.Drawing.Point(370, 324)
-        Me.Submit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Submit.Location = New System.Drawing.Point(404, 370)
+        Me.Submit.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Submit.Name = "Submit"
-        Me.Submit.Size = New System.Drawing.Size(94, 38)
+        Me.Submit.Size = New System.Drawing.Size(103, 43)
         Me.Submit.TabIndex = 6
         Me.Submit.Text = "Submit"
         Me.Submit.UseVisualStyleBackColor = True
         '
         'Clear
         '
-        Me.Clear.Location = New System.Drawing.Point(227, 324)
-        Me.Clear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Clear.Location = New System.Drawing.Point(248, 370)
+        Me.Clear.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Clear.Name = "Clear"
-        Me.Clear.Size = New System.Drawing.Size(94, 38)
+        Me.Clear.Size = New System.Drawing.Size(103, 43)
         Me.Clear.TabIndex = 7
         Me.Clear.Text = "Clear"
         Me.Clear.UseVisualStyleBackColor = True
         '
         'NewClient
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(799, 450)
+        Me.ClientSize = New System.Drawing.Size(723, 514)
         Me.Controls.Add(Me.Clear)
         Me.Controls.Add(Me.Submit)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Email)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.ClientName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MaximizeBox = False
         Me.Name = "NewClient"
         Me.Text = "NewClient"
@@ -133,8 +133,8 @@ Partial Class NewClient
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents ClientName As TextBox
+    Friend WithEvents Email As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Submit As Button

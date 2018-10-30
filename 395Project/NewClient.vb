@@ -6,8 +6,8 @@
     End Sub
 
     Private Sub Clear_Click(sender As Object, e As EventArgs) Handles Clear.Click
-        TextBox1.Clear()
-        TextBox2.Clear()
+        ClientName.Clear()
+        Email.Clear()
 
     End Sub
 
@@ -21,17 +21,14 @@
                     String.Join(",", emptyTextBoxes)))
         Else
             Dim name, email As String
-            name = TextBox1.Text.ToString
-            email = TextBox2.Text.ToString
+            name = Me.ClientName.Text.ToString
+            email = Me.Email.Text.ToString
             'change this to correct sql
             login.SQL.ExecQuery("AddClient '" + name + "','" + email + "'")
             MessageBox.Show("Add New Client Done")
-            TextBox1.Clear()
-            TextBox2.Clear()
+            Me.ClientName.Clear()
+            Me.Email.Clear()
         End If
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
 End Class
