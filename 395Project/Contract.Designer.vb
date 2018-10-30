@@ -38,7 +38,7 @@ Partial Class Contract
         '
         Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.s
         Me.PictureBox1.Location = New System.Drawing.Point(287, 40)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(61, 51)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -49,7 +49,7 @@ Partial Class Contract
         '
         Me.Back.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Back.Location = New System.Drawing.Point(55, 31)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(130, 47)
         Me.Back.TabIndex = 14
@@ -71,18 +71,18 @@ Partial Class Contract
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(82, 104)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(377, 100)
+        Me.DataGridView1.Size = New System.Drawing.Size(1307, 365)
         Me.DataGridView1.TabIndex = 11
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(82, 208)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button4.Location = New System.Drawing.Point(458, 499)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(95, 37)
+        Me.Button4.Size = New System.Drawing.Size(138, 47)
         Me.Button4.TabIndex = 10
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = True
@@ -90,8 +90,8 @@ Partial Class Contract
         'Button3
         '
         Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button3.Location = New System.Drawing.Point(956, 499)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Location = New System.Drawing.Point(863, 499)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(130, 47)
         Me.Button3.TabIndex = 10
@@ -102,7 +102,7 @@ Partial Class Contract
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button2.Location = New System.Drawing.Point(666, 499)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(130, 47)
         Me.Button2.TabIndex = 9
@@ -113,7 +113,7 @@ Partial Class Contract
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button1.Location = New System.Drawing.Point(1160, 50)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(130, 47)
         Me.Button1.TabIndex = 8
@@ -133,7 +133,7 @@ Partial Class Contract
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "Contract"
         Me.Text = "Contract"

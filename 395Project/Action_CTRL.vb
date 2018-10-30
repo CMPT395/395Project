@@ -30,4 +30,9 @@
         Contract.DataGridView1.Columns(0).ReadOnly = True ' restricted the Client ID cannot be changed
         Contract.DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells ' auto size the cells in dataview
     End Sub
+
+    Private Sub Constructors_Click(sender As Object, e As EventArgs) Handles Constructors.Click
+        Contractor.Show()
+
+    End Sub
 End Class

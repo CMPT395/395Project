@@ -11,7 +11,7 @@ Public Class Contractor
     End Sub
 
     Private Sub Contractor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        login.SQL.ExecQuery("Select * from contractor")
+        login.SQL.ExecQuery("Select * from Contractors")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
 
@@ -26,7 +26,7 @@ Public Class Contractor
             If (IsNumeric(idbox.Text)) Then
                 idsearch = idbox.Text
 
-                login.SQL.ExecQuery("select * from Contractor where ClientID = " + idsearch.ToString + "or first_name = '" + searchstr + "' or last_name = '" + searchstr + "'")
+                login.SQL.ExecQuery("select * from Contractors where ClientID = " + idsearch.ToString + "or first_name = '" + searchstr + "' or last_name = '" + searchstr + "'")
                 DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
             End If
 

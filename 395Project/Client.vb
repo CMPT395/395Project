@@ -32,7 +32,7 @@ Public Class Client
             If (DataGridView1.SelectedCells.Count > 0) Then
                 intResult = MessageBox.Show("You sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
                 If intResult = DialogResult.OK Then
-                    Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
+                    Dim aaa As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
                     login.SQL.DBDA.Update(login.SQL.DBDS)
                     MsgBox("Changes updated!")
                 Else
@@ -56,7 +56,7 @@ Public Class Client
                 intResult = MessageBox.Show("You sure you want to cancel this order", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
                 If intResult = DialogResult.OK Then
                     DataGridView1.Rows.RemoveAt(DataGridView1.CurrentCell.RowIndex)
-                    Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
+                    Dim bbb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
                     login.SQL.DBDA.Update(login.SQL.DBDS)
                     MsgBox("Deleted")
                 Else
