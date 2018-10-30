@@ -18,7 +18,7 @@ Partial Class Contract
     Private components As System.ComponentModel.IContainer
 
     'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
+    'It can be modified using the Windows Form Designer.
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
@@ -70,21 +70,20 @@ Partial Class Contract
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(167, 117)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Location = New System.Drawing.Point(82, 104)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(1123, 359)
-        Me.DataGridView1.TabIndex = 12
+        Me.DataGridView1.Size = New System.Drawing.Size(377, 100)
+        Me.DataGridView1.TabIndex = 11
         '
         'Button4
         '
-        Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button4.Location = New System.Drawing.Point(353, 499)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Location = New System.Drawing.Point(82, 208)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(130, 47)
-        Me.Button4.TabIndex = 11
+        Me.Button4.Size = New System.Drawing.Size(95, 37)
+        Me.Button4.TabIndex = 10
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = True
         '
