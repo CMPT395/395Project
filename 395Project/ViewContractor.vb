@@ -2,6 +2,7 @@
 
     Private Sub ViewContractor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
         viewFirstNameLabel.Text = Contractor.DataGridView1.CurrentRow.Cells(1).Value.ToString
         viewLastNameLabel.Text = Contractor.DataGridView1.CurrentRow.Cells(2).Value.ToString
         viewIDLabel.Text = Contractor.DataGridView1.CurrentRow.Cells(0).Value.ToString

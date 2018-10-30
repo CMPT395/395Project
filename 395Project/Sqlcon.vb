@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Imports System.Data.Sql
+
 Public Class Sqlcon
     'DESKTOP-UUM78C3 Williams Desktop
     'DESKTOP-1NVLP4D  Leon Desktop
