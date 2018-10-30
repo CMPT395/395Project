@@ -12,7 +12,7 @@
     End Sub
 
     Private Sub Employers_Click(sender As Object, e As EventArgs) Handles Employers.Click
-        Me.Hide()
+        'Me.Hide()
         Client.Show()
         login.SQL.ExecQuery("select * from Client")
         Client.DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
@@ -23,7 +23,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
+        'Me.Hide()
         Contract.Show()
         login.SQL.ExecQuery("select * from Contracts")
         Contract.DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
