@@ -29,17 +29,11 @@ Public Class Client
             login.SQL.DBDA.Update(login.SQL.DBDS)
             MsgBox("Changes updated!")
 
-            If (DataGridView1.SelectedCells.Count > 0) Then
-                intResult = MessageBox.Show("You sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
-                If intResult = DialogResult.OK Then
-                    Dim aaa As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
-                    login.SQL.DBDA.Update(login.SQL.DBDS)
-                    MsgBox("Changes updated!")
-                Else
-                    MessageBox.Show("Please make a selection before removing")
-                End If
-            End If
+
+        Else
+            MessageBox.Show("Please make a selection before removing")
         End If
+
 
     End Sub
 

@@ -35,85 +35,79 @@ Partial Class NewClient
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("宋体", 14.14286!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(222, 28)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(161, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(338, 34)
+        Me.Label1.Size = New System.Drawing.Size(208, 27)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Client Sign Up Form"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(180, 117)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(131, 89)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(131, 21)
+        Me.Label2.Size = New System.Drawing.Size(84, 17)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Client Name"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(348, 116)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Location = New System.Drawing.Point(253, 88)
+        Me.TextBox1.MaxLength = 40
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(147, 31)
+        Me.TextBox1.Size = New System.Drawing.Size(108, 22)
         Me.TextBox1.TabIndex = 2
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(348, 180)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Location = New System.Drawing.Point(253, 137)
+        Me.TextBox2.MaxLength = 50
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(147, 31)
+        Me.TextBox2.Size = New System.Drawing.Size(108, 22)
         Me.TextBox2.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(211, 191)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(153, 146)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 21)
+        Me.Label3.Size = New System.Drawing.Size(42, 17)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Email"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(29, 24)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(21, 18)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(101, 37)
+        Me.Button1.Size = New System.Drawing.Size(73, 28)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Submit
         '
-        Me.Submit.Location = New System.Drawing.Point(370, 324)
-        Me.Submit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Submit.Location = New System.Drawing.Point(269, 247)
         Me.Submit.Name = "Submit"
-        Me.Submit.Size = New System.Drawing.Size(94, 38)
+        Me.Submit.Size = New System.Drawing.Size(68, 29)
         Me.Submit.TabIndex = 6
         Me.Submit.Text = "Submit"
         Me.Submit.UseVisualStyleBackColor = True
         '
         'Clear
         '
-        Me.Clear.Location = New System.Drawing.Point(227, 324)
-        Me.Clear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Clear.Location = New System.Drawing.Point(165, 247)
         Me.Clear.Name = "Clear"
-        Me.Clear.Size = New System.Drawing.Size(94, 38)
+        Me.Clear.Size = New System.Drawing.Size(68, 29)
         Me.Clear.TabIndex = 7
         Me.Clear.Text = "Clear"
         Me.Clear.UseVisualStyleBackColor = True
         '
         'NewClient
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(799, 450)
+        Me.ClientSize = New System.Drawing.Size(581, 343)
         Me.Controls.Add(Me.Clear)
         Me.Controls.Add(Me.Submit)
         Me.Controls.Add(Me.Button1)
@@ -122,7 +116,6 @@ Partial Class NewClient
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.Name = "NewClient"
         Me.Text = "NewClient"

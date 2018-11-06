@@ -16,6 +16,7 @@
         If emptyTextBoxes.Any Then
             MessageBox.Show(String.Format("Please fill following textboxes: {0}",
                     String.Join(",", emptyTextBoxes)))
+
         Else
             Try
                 Dim parsedValue As Integer
@@ -27,6 +28,7 @@
                     MessageBox.Show("Please enter a valid contract length")
                     contractLengthText.Clear()
                 Else
+                    'limit the substring?'
                     login.SQL.AddParam("@first_name", conFirstNameText.Text)
                     login.SQL.AddParam("@last_name", conLastNameText.Text)
                     login.SQL.AddParam("@email", conEmailText.Text)

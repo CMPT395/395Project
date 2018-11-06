@@ -112,6 +112,7 @@ Partial Class NewContractor
         'conFirstNameText
         '
         Me.conFirstNameText.Location = New System.Drawing.Point(166, 99)
+        Me.conFirstNameText.MaxLength = 20
         Me.conFirstNameText.Name = "conFirstNameText"
         Me.conFirstNameText.Size = New System.Drawing.Size(165, 22)
         Me.conFirstNameText.TabIndex = 10
@@ -119,6 +120,7 @@ Partial Class NewContractor
         'conLastNameText
         '
         Me.conLastNameText.Location = New System.Drawing.Point(504, 97)
+        Me.conLastNameText.MaxLength = 50
         Me.conLastNameText.Name = "conLastNameText"
         Me.conLastNameText.Size = New System.Drawing.Size(165, 22)
         Me.conLastNameText.TabIndex = 11
@@ -126,6 +128,7 @@ Partial Class NewContractor
         'conEmailText
         '
         Me.conEmailText.Location = New System.Drawing.Point(205, 189)
+        Me.conEmailText.MaxLength = 50
         Me.conEmailText.Name = "conEmailText"
         Me.conEmailText.Size = New System.Drawing.Size(165, 22)
         Me.conEmailText.TabIndex = 12
