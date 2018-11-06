@@ -97,10 +97,22 @@
     <Compile Include="Contract.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HourTracking.Designer.vb">
+      <DependentUpon>HourTracking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HourTracking.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NewClient.Designer.vb">
       <DependentUpon>NewClient.vb</DependentUpon>
     </Compile>
     <Compile Include="NewClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewContract.Designer.vb">
+      <DependentUpon>NewContract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewContract.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewContractor.Designer.vb">
@@ -158,6 +170,9 @@
     <EmbeddedResource Include="Contract.resx">
       <DependentUpon>Contract.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HourTracking.resx">
+      <DependentUpon>HourTracking.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewClient.resx">
       <DependentUpon>NewClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewContract.resx">
+      <DependentUpon>NewContract.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewContractor.resx">
       <DependentUpon>NewContractor.vb</DependentUpon>
