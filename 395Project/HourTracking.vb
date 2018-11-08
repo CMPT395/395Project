@@ -11,7 +11,7 @@ Public Class HourTracking
     ''' </summary>
     ''' <param name="ReceiveAddressList">a list of receivers' email address</param>
 
-    Private Function sendemail(ByVal ReceiveAddressList As List(Of String))
+    Public Function SendeEmail(ByVal ReceiveAddressList As List(Of String))
         Dim Emailmessage As New MailMessage
         Dim smtp As New SmtpClient
 
@@ -20,7 +20,7 @@ Public Class HourTracking
         smtp.Port = 587
         smtp.EnableSsl = True
         smtp.Credentials = New System.Net.NetworkCredential("monthlyhourcollector@gmail.com", "cmpt395test")
-        Emailmessage.From = New MailAddress("leonxiao587@gmail.com")
+        Emailmessage.From = New MailAddress("monthlyhourcollector@gmail.com")
         'add Receiver
         If ReceiveAddressList.Count = 0 Then Return False
         For i = 0 To ReceiveAddressList.Count - 1
@@ -47,7 +47,7 @@ Public Class HourTracking
     End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        sendemail(ReceiverList)
+        SendeEmail(ReceiverList)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
