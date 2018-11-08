@@ -10,7 +10,7 @@ Public Class Client
         End If
         ' stored proc will not compatible with the gridview data update and delete!!! May have to use simpler way
         'login.SQL.ExecQuery("searchClient " + idsearch.ToString + "," + searchstr)
-        login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name = '" + searchstr + "' or Pemail = '" + searchstr + "'")
+        login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

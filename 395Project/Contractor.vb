@@ -11,7 +11,7 @@ Public Class Contractor
     End Sub
 
     Private Sub Contractor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        login.SQL.ExecQuery("Select * from Contractor")
+        login.SQL.ExecQuery("Select * from Contractors")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
 
