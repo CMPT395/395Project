@@ -66,7 +66,7 @@ Public Class HourTracking
     End Sub
 
     Private Sub HourTracking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        login.SQL.ExecQuery("SELECT Contractors.CID,Contractors.FName,Contractors.LName,Contractors.Cemail from Contractors left join Timesheet on Contractors.CID = Timesheet.CID where Timesheet.CID is NULL")
+        login.SQL.ExecQuery("SELECT Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail from Contractors left join Timesheet on Contractors.CID = Timesheet.CID where Timesheet.CID is NULL")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
 End Class
