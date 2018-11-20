@@ -79,6 +79,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddClient.Designer.vb" />
+    <Compile Include="Billing.Designer.vb">
+      <DependentUpon>Billing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Billing.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Client.Designer.vb">
       <DependentUpon>Client.vb</DependentUpon>
     </Compile>
@@ -160,6 +166,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Action_CTRL.resx">
       <DependentUpon>Action_CTRL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing.resx">
+      <DependentUpon>Billing.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.vb</DependentUpon>

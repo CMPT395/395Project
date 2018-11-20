@@ -70,4 +70,9 @@ Public Class Contract
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Me.Close()
+        Billing.Show()
+    End Sub
 End Class
