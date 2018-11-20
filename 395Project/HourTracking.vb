@@ -40,20 +40,19 @@ Public Class HourTracking
     End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If DataGridView1.CurrentCell.Value Is Nothing Then
+            MsgBox("Already send to all")
+        Else
 
-        For i As Integer = 0 To DataGridView1.Rows.Count - 2
-            list.Add(DataGridView1.Rows(i).Cells(3).Value())
-        Next
-        For Each item In list
-            String.Join(",", item)
-            receiverlist.Add(item)
-        Next
-
-
-
-
-
-        SendeEmail(receiverlist)
+            For i As Integer = 0 To DataGridView1.Rows.Count - 2
+                list.Add(DataGridView1.Rows(i).Cells(2).Value())
+            Next
+            For Each item In list
+                String.Join(",", item)
+                receiverlist.Add(item)
+            Next
+            SendeEmail(receiverlist)
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -62,11 +61,14 @@ Public Class HourTracking
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        'DataGridView1.CurrentRow = DataGridView1.Rows(0)
+
 
     End Sub
 
     Private Sub HourTracking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        login.SQL.ExecQuery("SELECT Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail from Contractors left join Timesheet on Contractors.CID = Timesheet.CID where Timesheet.CID is NULL")
+        Dim currentDate As DateTime = DateTime.Now
+        login.SQL.ExecQuery("SELECT Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail from Contractors,Timesheet where Timesheet.CID = Contractors.CID and timesheet.month != " + currentDate.Month.ToString)
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
 End Class

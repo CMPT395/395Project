@@ -13,9 +13,9 @@ Public Class Billing
         End If
         ' stored proc will not compatible with the gridview data update and delete!!! May have to use simpler way
         'login.SQL.ExecQuery("searchClient " + idsearch.ToString + "," + searchstr)
-        login.SQL.ExecQuery("select * from Bill")
-        ''where CID = " + idsearch.ToString + "or FileNum = '" + searchstr + "' or ClientID = '" + searchstr +
-        ''"' or Salary = '" + searchstr + "' or Renewable = '" + searchstr + "' or RenewYear = '" + searchstr + "'")
+        login.SQL.ExecQuery("select * from Bill 
+                            where CID = " + idsearch.ToString + "or BID = '" + searchstr + "' or ClientID = '" + searchstr +
+                            "' or Hours = '" + searchstr + "' or Month = '" + searchstr + "' or Amount = '" + searchstr + "'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
