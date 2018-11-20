@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Contract
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Contract
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Back = New System.Windows.Forms.Button()
@@ -30,7 +30,6 @@ Partial Class Contract
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -60,10 +59,10 @@ Partial Class Contract
         'searchbox
         '
         Me.searchbox.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.searchbox.Location = New System.Drawing.Point(226, 34)
+        Me.searchbox.Location = New System.Drawing.Point(193, 24)
         Me.searchbox.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.searchbox.Name = "searchbox"
-        Me.searchbox.Size = New System.Drawing.Size(400, 21)
+        Me.searchbox.Size = New System.Drawing.Size(344, 21)
         Me.searchbox.TabIndex = 13
         '
         'DataGridView1
@@ -75,7 +74,7 @@ Partial Class Contract
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(1)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 37
-        Me.DataGridView1.Size = New System.Drawing.Size(713, 209)
+        Me.DataGridView1.Size = New System.Drawing.Size(629, 209)
         Me.DataGridView1.TabIndex = 11
         '
         'Button4
@@ -91,7 +90,7 @@ Partial Class Contract
         'Button3
         '
         Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button3.Location = New System.Drawing.Point(446, 285)
+        Me.Button3.Location = New System.Drawing.Point(603, 285)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(71, 27)
@@ -102,7 +101,7 @@ Partial Class Contract
         'Button2
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button2.Location = New System.Drawing.Point(284, 285)
+        Me.Button2.Location = New System.Drawing.Point(358, 285)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(71, 27)
@@ -113,7 +112,7 @@ Partial Class Contract
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.Location = New System.Drawing.Point(655, 29)
+        Me.Button1.Location = New System.Drawing.Point(603, 20)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(71, 27)
@@ -121,23 +120,11 @@ Partial Class Contract
         Me.Button1.Text = "Search"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button5
-        '
-        Me.Button5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button5.Location = New System.Drawing.Point(599, 285)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(71, 27)
-        Me.Button5.TabIndex = 16
-        Me.Button5.Text = "View Bill"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Contract
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(790, 347)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.searchbox)
@@ -165,5 +152,4 @@ Partial Class Contract
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button5 As Button
 End Class
