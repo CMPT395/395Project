@@ -7,13 +7,14 @@ Public Class HourTracking
     Public Function SendeEmail(ByVal ReceiveAddressList As List(Of String))
         Dim Emailmessage As New MailMessage
         Dim smtp As New SmtpClient
-
-        smtp.Host = "smtp.gmail.com"
+        login.SQL.ExecQuery("SELECT * from email where duty = 'getHours'")
+        Label1.Text = login.SQL.DBDS.Tables(0).Rows(0)(1)
+        smtp.Host = login.SQL.DBDS.Tables(0).Rows(0)(1).ToString
         smtp.UseDefaultCredentials = False
-        smtp.Port = 587
+        smtp.Port = login.SQL.DBDS.Tables(0).Rows(0)(2)
         smtp.EnableSsl = True
-        smtp.Credentials = New System.Net.NetworkCredential("monthlyhourcollector@gmail.com", "cmpt395test")
-        Emailmessage.From = New MailAddress("monthlyhourcollector@gmail.com")
+        smtp.Credentials = New System.Net.NetworkCredential(login.SQL.DBDS.Tables(0).Rows(0)(3).ToString, login.SQL.DBDS.Tables(0).Rows(0)(4).ToString)
+        Emailmessage.From = New MailAddress(login.SQL.DBDS.Tables(0).Rows(0)(3).ToString)
 
         ' I added the part to read all the emails from the datagridview and add it to the mailing list
 
@@ -22,8 +23,8 @@ Public Class HourTracking
             Emailmessage.To.Add(receiverlist(i))
         Next
 
-        Emailmessage.Subject = "Monthly Hour Required"
-        Emailmessage.Body = "Please click On the link To fill your working hours"
+        Emailmessage.Subject = login.SQL.DBDS.Tables(0).Rows(0)(5).ToString
+        Emailmessage.Body = login.SQL.DBDS.Tables(0).Rows(0)(6).ToString
 
         Try
             smtp.Send(Emailmessage)
