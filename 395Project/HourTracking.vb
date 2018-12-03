@@ -23,7 +23,7 @@ Public Class HourTracking
             Emailmessage.To.Add(receiverlist(i))
         Next
 
-        Emailmessage.Subject = login.SQL.DBDS.Tables(0).Rows(0)(5).ToString
+        Emailmessage.Subject = login.SQL.DBDS.Tables(0).Rows(0)(5).ToString 'get email field from database
         Emailmessage.Body = login.SQL.DBDS.Tables(0).Rows(0)(6).ToString
 
         Try
@@ -63,6 +63,7 @@ Public Class HourTracking
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         'DataGridView1.CurrentRow = DataGridView1.Rows(0)
+        DataGridView1.Columns(DataGridView1.ColumnCount - 1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
 
 
     End Sub
