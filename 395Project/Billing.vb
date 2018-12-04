@@ -26,9 +26,9 @@ Public Class Billing
         ''End If
         ' stored proc will not compatible with the gridview data update and delete!!! May have to use simpler way
         'login.SQL.ExecQuery("searchClient " + idsearch.ToString + "," + searchstr)
-        login.SQL.ExecQuery("SELECT Bill.BID, Bill.CID, Bill.ClientID, Timesheet.Year, Timesheet.Month, Timesheet.Hour * Contracts.Salary as Amount, Contractors.Cemail
-                             FROM Bill, Timesheet, Contracts, Contractors
-                             WHERE Bill.CID=Timesheet.CID AND Bill.CID=Contracts.CID AND Bill.CID=Contractors.CID and timesheet. status != 'emailed'")
+        login.SQL.ExecQuery("SELECT Bill.BID, Bill.CID, Bill.ClientID, Timesheet.Year, Timesheet.Month, Timesheet.Hour * Contracts.Salary as Amount, Client.Pemail
+                             FROM Bill, Timesheet, Contracts, Client
+                             WHERE Bill.CID=Timesheet.CID AND Bill.CID=Contracts.CID AND Bill.ClientID=Client.ClientID and timesheet.status != 'emailed'")
         ''AND Bill.BID = " + idsearch.ToString + "or Bill.CID = '" + searchstr + "' or Bill.ClientID = '" + searchstr +
         ''"' or  Timesheet.Year = '" + searchstr + "' or Timesheet.Month = '" + searchstr + "' or Amount = '" + searchstr + "'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
@@ -54,13 +54,13 @@ Public Class Billing
         index = e.RowIndex
         Dim selectedRow As DataGridViewRow
         selectedRow = DataGridView1.Rows(index)
-        TextBox1.Text = selectedRow.Cells(0).Value.ToString()
-        TextBox2.Text = selectedRow.Cells(1).Value.ToString()
-        TextBox3.Text = selectedRow.Cells(2).Value.ToString()
-        TextBox4.Text = selectedRow.Cells(3).Value.ToString()
-        TextBox5.Text = selectedRow.Cells(4).Value.ToString()
-        TextBox6.Text = selectedRow.Cells(5).Value.ToString()
-        TextBox7.Text = selectedRow.Cells(6).Value.ToString()
+        Label9.Text = selectedRow.Cells(0).Value.ToString()
+        Label10.Text = selectedRow.Cells(1).Value.ToString()
+        Label11.Text = selectedRow.Cells(2).Value.ToString()
+        Label12.Text = selectedRow.Cells(3).Value.ToString()
+        Label13.Text = selectedRow.Cells(4).Value.ToString()
+        Label14.Text = selectedRow.Cells(5).Value.ToString()
+        Label15.Text = selectedRow.Cells(6).Value.ToString()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -71,12 +71,12 @@ Public Class Billing
         Dim Month As String
         Dim Amount As String
         Dim Email As String
-        BID = TextBox1.Text ''= selectedRow.Cells(0).Value.ToString()
-        CID = TextBox2.Text '' = selectedRow.Cells(1).Value.ToString()
-        ClientID = TextBox3.Text ''= selectedRow.Cells(2).Value.ToString()
-        Year = TextBox4.Text '' = selectedRow.Cells(3).Value.ToString()
-        Month = TextBox5.Text '' = selectedRow.Cells(4).Value.ToString()
-        Amount = TextBox6.Text '' = selectedRow.Cells(5).Value.ToString()
+        BID = Label9.Text ''= selectedRow.Cells(0).Value.ToString()
+        CID = Label10.Text '' = selectedRow.Cells(1).Value.ToString()
+        ClientID = Label11.Text ''= selectedRow.Cells(2).Value.ToString()
+        Year = Label12.Text '' = selectedRow.Cells(3).Value.ToString()
+        Month = Label13.Text '' = selectedRow.Cells(4).Value.ToString()
+        Amount = Label14.Text '' = selectedRow.Cells(5).Value.ToString()
         login.SQL.ExecQuery("select pemail from client where ClientID = " + ClientID)
         Email = login.SQL.DBDS.Tables(0).Rows(0)(0)
         message = "Invoice Number: " + BID + vbCrLf + "Your monthly payment to:" + CID + vbCrLf + "Amount:" + Amount + vbCrLf + "For " + Year + "/" + Month + vbCrLf + "Send to " + Email
@@ -117,4 +117,8 @@ Public Class Billing
         End Try
 
     End Function
+
+    Private Sub Label14_Click(sender As Object, e As EventArgs) 
+
+    End Sub
 End Class
