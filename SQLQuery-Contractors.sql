@@ -30,11 +30,11 @@ GO
 
 
 INSERT INTO Contractors
-VALUES( 3, 'a', 'a', 'contractor1@gmail.com');
+VALUES( 3, 'a', 'a', 'tranw4@mymacewan.ca');
 INSERT INTO Contractors
-VALUES( 4, 'b', 'b', 'contractor2@gmail.com');
+VALUES( 4, 'b', 'b', 'xiaoj3@mymacewan.ca');
 INSERT INTO Contractors
-VALUES( 2, 'c', 'c', 'contractor3@gmail.com');
+VALUES( 2, 'c', 'c', 'tiany9@mymacewan.ca');
 INSERT INTO Contractors
 VALUES( 1, 'd', 'd', 'contractor4@gmail.com');
 INSERT INTO Contractors
