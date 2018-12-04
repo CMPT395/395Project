@@ -1,14 +1,11 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Net.Mail
 
 
 Public Class Billing
-    Shared BID As String
-    Shared CID As String
-    Shared ClientID As String
-    Shared Year As String
-    Shared Month As String
-    Shared Amount As String
-    Shared Email As String
+
+    Dim message As String
+    Public receiverlist As New List(Of String)
 
 
     ''a = 
@@ -31,7 +28,7 @@ Public Class Billing
         'login.SQL.ExecQuery("searchClient " + idsearch.ToString + "," + searchstr)
         login.SQL.ExecQuery("SELECT Bill.BID, Bill.CID, Bill.ClientID, Timesheet.Year, Timesheet.Month, Timesheet.Hour * Contracts.Salary as Amount, Contractors.Cemail
                              FROM Bill, Timesheet, Contracts, Contractors
-                             WHERE Bill.CID=Timesheet.CID AND Bill.CID=Contracts.CID AND Bill.CID=Contractors.CID")
+                             WHERE Bill.CID=Timesheet.CID AND Bill.CID=Contracts.CID AND Bill.CID=Contractors.CID and timesheet. status != 'emailed'")
         ''AND Bill.BID = " + idsearch.ToString + "or Bill.CID = '" + searchstr + "' or Bill.ClientID = '" + searchstr +
         ''"' or  Timesheet.Year = '" + searchstr + "' or Timesheet.Month = '" + searchstr + "' or Amount = '" + searchstr + "'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
@@ -67,13 +64,57 @@ Public Class Billing
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim BID As String
+        Dim CID As String
+        Dim ClientID As String
+        Dim Year As String
+        Dim Month As String
+        Dim Amount As String
+        Dim Email As String
         BID = TextBox1.Text ''= selectedRow.Cells(0).Value.ToString()
         CID = TextBox2.Text '' = selectedRow.Cells(1).Value.ToString()
         ClientID = TextBox3.Text ''= selectedRow.Cells(2).Value.ToString()
         Year = TextBox4.Text '' = selectedRow.Cells(3).Value.ToString()
         Month = TextBox5.Text '' = selectedRow.Cells(4).Value.ToString()
         Amount = TextBox6.Text '' = selectedRow.Cells(5).Value.ToString()
-        Email = TextBox7.Text '' = selectedRow.Cells(6).Value.ToString()
-        ''PrintLine("BID, CID, ClientID, Year, Month, Amount, Email")
+        login.SQL.ExecQuery("select pemail from client where ClientID = " + ClientID)
+        Email = login.SQL.DBDS.Tables(0).Rows(0)(0)
+        message = "Invoice Number: " + BID + vbCrLf + "Your monthly payment to:" + CID + vbCrLf + "Amount:" + Amount + vbCrLf + "For " + Year + "/" + Month + vbCrLf + "Send to " + Email
+        test.Text = message
+        ' change email to client email
+        SendeEmail(Email)
     End Sub
+
+    Public Function SendeEmail(ByVal ReceiveAddress As String)
+        Dim Emailmessage As New MailMessage
+        Dim smtp As New SmtpClient
+        login.SQL.ExecQuery("SELECT * from email where duty = 'sendInvoice'")
+        'Label1.Text = login.SQL.DBDS.Tables(0).Rows(0)(1)
+        smtp.Host = login.SQL.DBDS.Tables(0).Rows(0)(1).ToString
+        smtp.UseDefaultCredentials = False
+        smtp.Port = login.SQL.DBDS.Tables(0).Rows(0)(2)
+        smtp.EnableSsl = True
+        smtp.Credentials = New System.Net.NetworkCredential(login.SQL.DBDS.Tables(0).Rows(0)(3).ToString, login.SQL.DBDS.Tables(0).Rows(0)(4).ToString)
+        Emailmessage.From = New MailAddress(login.SQL.DBDS.Tables(0).Rows(0)(3).ToString)
+
+        ' I added the part to read all the emails from the datagridview and add it to the mailing list
+
+        Emailmessage.To.Add(ReceiveAddress)
+
+        Emailmessage.Subject = login.SQL.DBDS.Tables(0).Rows(0)(5).ToString 'get email field from database
+        Emailmessage.Body = message 'message string defined by button clicked
+
+        Try
+            smtp.Send(Emailmessage)
+            MessageBox.Show("Email Send！")
+            Return True
+        Catch
+            MessageBox.Show("Failed！")
+            Return False
+        Finally
+            Emailmessage.Dispose()
+
+        End Try
+
+    End Function
 End Class

@@ -8,4 +8,7 @@ CREATE TABLE email
 	ebody varchar(500),
 );
 INSERT INTO email
+VALUES( 'sendInvoice','smtp.gmail.com', 587, 'monthlyhourcollector@gmail.com','cmpt395test','Monthly invoice'
+,'');
+INSERT INTO email
 VALUES( 'getHours','smtp.gmail.com', 587, 'monthlyhourcollector@gmail.com','cmpt395test','Monthly Hour Required','Please click On the link To fill your working hours + the website link');
