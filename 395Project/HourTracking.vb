@@ -42,7 +42,7 @@ Public Class HourTracking
     End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If DataGridView1.CurrentCell.Value Is Nothing Then
+        If DataGridView1.CurrentCell Is Nothing Then
             MsgBox("Already send to all")
         Else
 
@@ -59,8 +59,12 @@ Public Class HourTracking
         Dim currentDate As DateTime = DateTime.Now
 
         For i = 0 To NewMonthList.Count - 1
-            login.SQL.ExecQuery("INSERT INTO timesheet VALUES(" + NewMonthList(i).ToString + "," + currentDate.Year.ToString + "," + currentDate.Month.ToString + ",0,'emailed')")
+            login.SQL.ExecQuery("Select Cemail from Contractors where CID = " + NewMonthList(i).ToString)
+            Dim email As String
+            email = login.SQL.DBDS.Tables(0).Rows(0)(0)
+            login.SQL.ExecQuery("INSERT INTO timesheet VALUES(" + NewMonthList(i).ToString + "," + currentDate.Year.ToString + "," + currentDate.Month.ToString + ",0,'emailed','" + email + "')")
         Next
+        DataGridView1.DataSource = Nothing
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -77,13 +81,18 @@ Public Class HourTracking
 
     Private Sub HourTracking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim currentDate As DateTime = DateTime.Now
-        login.SQL.ExecQuery("SELECT distinct Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail 
-from Contractors,Contracts
-where  Contractors.CID=Contracts.CID and Contractors.cid not in (select cid from timesheet where Status='emailed' or month =" + currentDate.Month.ToString + ")")
+        login.SQL.ExecQuery("Select distinct Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail 
+                            from Contractors,Contracts
+                            where  Contractors.CID=Contracts.CID and Contractors.cid not in (select cid from timesheet where Status='emailed' or month =" + currentDate.Month.ToString + ")")
 
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
         For i As Integer = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
             NewMonthList.Add(login.SQL.DBDS.Tables(0).Rows(i)(0))
         Next
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles StatusButton.Click
+        Me.Hide()
+        Status.Show()
     End Sub
 End Class
