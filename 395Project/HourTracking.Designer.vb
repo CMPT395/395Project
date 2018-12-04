@@ -25,7 +25,6 @@ Partial Class HourTracking
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Status = New System.Windows.Forms.Button()
         Me.Refresh = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -33,18 +32,18 @@ Partial Class HourTracking
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(663, 14)
+        Me.Button1.Location = New System.Drawing.Point(723, 16)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 51)
+        Me.Button1.Size = New System.Drawing.Size(120, 58)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Send"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(16, 14)
+        Me.Button2.Location = New System.Drawing.Point(17, 16)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(111, 51)
+        Me.Button2.Size = New System.Drawing.Size(121, 58)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Back"
         Me.Button2.UseVisualStyleBackColor = True
@@ -52,48 +51,38 @@ Partial Class HourTracking
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 87)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Location = New System.Drawing.Point(17, 99)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(769, 374)
+        Me.DataGridView1.Size = New System.Drawing.Size(839, 427)
         Me.DataGridView1.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(178, 29)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 21)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Label1"
         '
         'Status
         '
-        Me.Status.Location = New System.Drawing.Point(449, 484)
+        Me.Status.Location = New System.Drawing.Point(490, 553)
         Me.Status.Name = "Status"
-        Me.Status.Size = New System.Drawing.Size(110, 51)
+        Me.Status.Size = New System.Drawing.Size(120, 58)
         Me.Status.TabIndex = 4
         Me.Status.Text = "Status"
         Me.Status.UseVisualStyleBackColor = True
         '
         'Refresh
         '
-        Me.Refresh.Location = New System.Drawing.Point(256, 484)
+        Me.Refresh.Location = New System.Drawing.Point(279, 553)
         Me.Refresh.Name = "Refresh"
-        Me.Refresh.Size = New System.Drawing.Size(110, 51)
+        Me.Refresh.Size = New System.Drawing.Size(120, 58)
         Me.Refresh.TabIndex = 5
         Me.Refresh.Text = "Refresh"
         Me.Refresh.UseVisualStyleBackColor = True
         '
         'HourTracking
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 545)
+        Me.ClientSize = New System.Drawing.Size(873, 623)
         Me.Controls.Add(Me.Refresh)
         Me.Controls.Add(Me.Status)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -101,14 +90,12 @@ Partial Class HourTracking
         Me.Text = " "
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Label1 As Label
     Friend WithEvents Status As Button
     Friend WithEvents Refresh As Button
 End Class

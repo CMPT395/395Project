@@ -4,11 +4,12 @@
 Public Class HourTracking
     Public list As New List(Of String)
     Public receiverlist As New List(Of String)
+    Public NewMonthList As New List(Of Integer)
     Public Function SendeEmail(ByVal ReceiveAddressList As List(Of String))
         Dim Emailmessage As New MailMessage
         Dim smtp As New SmtpClient
         login.SQL.ExecQuery("SELECT * from email where duty = 'getHours'")
-        Label1.Text = login.SQL.DBDS.Tables(0).Rows(0)(1)
+        'Label1.Text = login.SQL.DBDS.Tables(0).Rows(0)(1)
         smtp.Host = login.SQL.DBDS.Tables(0).Rows(0)(1).ToString
         smtp.UseDefaultCredentials = False
         smtp.Port = login.SQL.DBDS.Tables(0).Rows(0)(2)
@@ -54,6 +55,12 @@ Public Class HourTracking
             Next
             SendeEmail(receiverlist)
         End If
+
+        Dim currentDate As DateTime = DateTime.Now
+
+        For i = 0 To NewMonthList.Count - 1
+            login.SQL.ExecQuery("INSERT INTO timesheet VALUES(" + NewMonthList(i).ToString + "," + currentDate.Year.ToString + "," + currentDate.Month.ToString + ",0,'emailed')")
+        Next
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -70,7 +77,13 @@ Public Class HourTracking
 
     Private Sub HourTracking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim currentDate As DateTime = DateTime.Now
-        login.SQL.ExecQuery("SELECT Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail from Contractors,Timesheet where Timesheet.CID = Contractors.CID and timesheet.month != " + currentDate.Month.ToString)
+        login.SQL.ExecQuery("SELECT distinct Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail 
+from Contractors,Contracts
+where  Contractors.CID=Contracts.CID and Contractors.cid not in (select cid from timesheet where Status='emailed' or month =" + currentDate.Month.ToString + ")")
+
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
+        For i As Integer = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
+            NewMonthList.Add(login.SQL.DBDS.Tables(0).Rows(i)(0))
+        Next
     End Sub
 End Class
