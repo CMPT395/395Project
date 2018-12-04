@@ -26,9 +26,7 @@ Partial Class NewContract
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -39,9 +37,9 @@ Partial Class NewContract
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.StartDate = New System.Windows.Forms.DateTimePicker()
+        Me.EndDate = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'TextBox8
@@ -80,14 +78,6 @@ Partial Class NewContract
         Me.Label8.TabIndex = 44
         Me.Label8.Text = "Renewable"
         '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(323, 208)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(131, 21)
-        Me.TextBox6.TabIndex = 43
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -97,14 +87,6 @@ Partial Class NewContract
         Me.Label7.Size = New System.Drawing.Size(47, 12)
         Me.Label7.TabIndex = 42
         Me.Label7.Text = "EndDate"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(323, 175)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(131, 21)
-        Me.TextBox5.TabIndex = 41
         '
         'Label6
         '
@@ -200,24 +182,6 @@ Partial Class NewContract
         Me.Label3.TabIndex = 31
         Me.Label3.Text = "ClientID"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(323, 45)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(131, 21)
-        Me.TextBox1.TabIndex = 30
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(243, 48)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 12)
-        Me.Label2.TabIndex = 29
-        Me.Label2.Text = "FileNum"
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -229,18 +193,34 @@ Partial Class NewContract
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Add new Contract"
         '
+        'StartDate
+        '
+        Me.StartDate.Location = New System.Drawing.Point(323, 175)
+        Me.StartDate.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.StartDate.Name = "StartDate"
+        Me.StartDate.Size = New System.Drawing.Size(131, 21)
+        Me.StartDate.TabIndex = 83
+        '
+        'EndDate
+        '
+        Me.EndDate.Location = New System.Drawing.Point(323, 205)
+        Me.EndDate.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
+        Me.EndDate.Name = "EndDate"
+        Me.EndDate.Size = New System.Drawing.Size(131, 21)
+        Me.EndDate.TabIndex = 84
+        '
         'NewContract
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(620, 371)
+        Me.Controls.Add(Me.EndDate)
+        Me.Controls.Add(Me.StartDate)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.TextBox7)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label5)
@@ -251,8 +231,6 @@ Partial Class NewContract
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "NewContract"
         Me.Text = "NewContract"
@@ -265,9 +243,7 @@ Partial Class NewContract
     Friend WithEvents Label9 As Label
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label5 As Label
@@ -278,7 +254,7 @@ Partial Class NewContract
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents StartDate As DateTimePicker
+    Friend WithEvents EndDate As DateTimePicker
 End Class

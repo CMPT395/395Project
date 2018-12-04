@@ -11,8 +11,8 @@ Public Class Contract
         End If
         ' stored proc will not compatible with the gridview data update and delete!!! May have to use simpler way
         'login.SQL.ExecQuery("searchClient " + idsearch.ToString + "," + searchstr)
-        login.SQL.ExecQuery("select * from Contracts where CID = " + idsearch.ToString + "or FileNum = '" + searchstr + "' or ClientID = '" + searchstr +
-                             "' or Salary = '" + searchstr + "' or Renewable = '" + searchstr + "' or RenewYear = '" + searchstr + "'")
+        login.SQL.ExecQuery("select * from Contracts where CID = " + idsearch.ToString + "or FileNum like '%" + searchstr + "%' or ClientID like '%" + searchstr +
+                             "%' or Salary like '%" + searchstr + "%' or Renewable like '%" + searchstr + "%' or RenewYear like '%" + searchstr + "%'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
