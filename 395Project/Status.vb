@@ -1,10 +1,8 @@
 ﻿Imports System.Net.Mail
+Public Class Status
 
-
-Public Class HourTracking
     Public list As New List(Of String)
     Public receiverlist As New List(Of String)
-    Public NewMonthList As New List(Of Integer)
     Public Function SendeEmail(ByVal ReceiveAddressList As List(Of String))
         Dim Emailmessage As New MailMessage
         Dim smtp As New SmtpClient
@@ -41,13 +39,19 @@ Public Class HourTracking
 
     End Function
 
+    Private Sub Status_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim currentDate As DateTime = DateTime.Now
+        login.SQL.ExecQuery("SELECT * from timesheet where Status = 'emailed' and month =" + currentDate.Month.ToString)
+        DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If DataGridView1.CurrentCell Is Nothing Then
             MsgBox("Already send to all")
         Else
 
             For i As Integer = 0 To DataGridView1.Rows.Count - 2
-                list.Add(DataGridView1.Rows(i).Cells(2).Value())
+                list.Add(DataGridView1.Rows(i).Cells(5).Value())
             Next
             For Each item In list
                 String.Join(",", item)
@@ -55,44 +59,11 @@ Public Class HourTracking
             Next
             SendeEmail(receiverlist)
         End If
-
-        Dim currentDate As DateTime = DateTime.Now
-
-        For i = 0 To NewMonthList.Count - 1
-            login.SQL.ExecQuery("Select Cemail from Contractors where CID = " + NewMonthList(i).ToString)
-            Dim email As String
-            email = login.SQL.DBDS.Tables(0).Rows(0)(0)
-            login.SQL.ExecQuery("INSERT INTO timesheet VALUES(" + NewMonthList(i).ToString + "," + currentDate.Year.ToString + "," + currentDate.Month.ToString + ",0,'emailed','" + email + "')")
-        Next
-        DataGridView1.DataSource = Nothing
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
-        Action_CTRL.Show()
-    End Sub
+        HourTracking.Show()
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        'DataGridView1.CurrentRow = DataGridView1.Rows(0)
-        DataGridView1.Columns(DataGridView1.ColumnCount - 1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-
-
-    End Sub
-
-    Private Sub HourTracking_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim currentDate As DateTime = DateTime.Now
-        login.SQL.ExecQuery("Select distinct Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail 
-                            from Contractors,Contracts
-                            where  Contractors.CID=Contracts.CID and Contractors.cid not in (select cid from timesheet where Status='emailed' or month =" + currentDate.Month.ToString + ")")
-
-        DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
-        For i As Integer = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
-            NewMonthList.Add(login.SQL.DBDS.Tables(0).Rows(i)(0))
-        Next
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles StatusButton.Click
-        Me.Hide()
-        Status.Show()
     End Sub
 End Class

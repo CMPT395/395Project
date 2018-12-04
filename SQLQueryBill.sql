@@ -40,3 +40,13 @@ INSERT INTO Bill
 VALUES( 3, 333, 10,600,30);
 INSERT INTO Bill
 VALUES( 4, 444, 10,600,30);
+
+CREATE TABLE email
+(
+	host varchar (35),
+	port int,
+	eaddress varchar (55),
+	epassword varchar (20),
+	esubject varchar(100),
+	ebody varchar(500),
+);

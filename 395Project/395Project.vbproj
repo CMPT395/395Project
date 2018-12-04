@@ -150,6 +150,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Status.Designer.vb">
+      <DependentUpon>Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Status.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="updateConctractor.Designer.vb">
       <DependentUpon>updateConctractor.vb</DependentUpon>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewContractor.resx">
       <DependentUpon>NewContractor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Status.resx">
+      <DependentUpon>Status.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="updateConctractor.resx">
       <DependentUpon>updateConctractor.vb</DependentUpon>
