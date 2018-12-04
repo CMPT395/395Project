@@ -40,7 +40,7 @@ Partial Class NewContractor
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(161, 23)
+        Me.Label1.Location = New System.Drawing.Point(55, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(264, 49)
         Me.Label1.TabIndex = 0
@@ -135,7 +135,7 @@ Partial Class NewContractor
         '
         'conPayText
         '
-        Me.conPayText.Location = New System.Drawing.Point(175, 288)
+        Me.conPayText.Location = New System.Drawing.Point(185, 286)
         Me.conPayText.Name = "conPayText"
         Me.conPayText.Size = New System.Drawing.Size(165, 22)
         Me.conPayText.TabIndex = 14

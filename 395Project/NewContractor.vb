@@ -1,4 +1,5 @@
-﻿Public Class NewContractor
+﻿Imports System.Text.RegularExpressions
+Public Class NewContractor
     Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -21,14 +22,23 @@
             Try
                 Dim parsedValue As Integer
                 Dim insertQuery As String = "INSERT INTO Contractor(first_name,last_name,email,rate_of_pay,contract_length) VALUES (@first_name,@last_name,@email,@rate_of_pay,@contract_length)"
-                If (Not Integer.TryParse(conPayText.Text, parsedValue)) Then
+                Dim emailCheck As Match = Regex.Match(conEmailText.Text, "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$", RegexOptions.IgnoreCase)
+                If (Not Integer.TryParse(conPayText.Text, parsedValue)) Or parsedValue <= 0 Then
                     MessageBox.Show("Please enter a valid rate")
                     conPayText.Clear()
-                ElseIf (Not Integer.TryParse(contractLengthText.Text, parsedValue)) Then
+                ElseIf (Not Integer.TryParse(contractLengthText.Text, parsedValue)) Or parsedValue <= 0 Then
                     MessageBox.Show("Please enter a valid contract length")
                     contractLengthText.Clear()
+                ElseIf (System.Text.RegularExpressions.Regex.Match(conFirstNameText.Text, "^[1-9]+$").Success) Then
+                    MessageBox.Show("Please enter a valid First Name")
+                    conFirstNameText.Clear()
+                ElseIf (System.Text.RegularExpressions.Regex.IsMatch(conLastNameText.Text, "^[1-9]+$")) Then
+                    MessageBox.Show("Please enter a valid Last Name")
+                    conLastNameText.Clear()
+                ElseIf emailCheck.Success = False Then
+                    MessageBox.Show("Please enter a valid email")
+                    conEmailText.Clear()
                 Else
-                    'limit the substring?'
                     login.SQL.AddParam("@first_name", conFirstNameText.Text)
                     login.SQL.AddParam("@last_name", conLastNameText.Text)
                     login.SQL.AddParam("@email", conEmailText.Text)

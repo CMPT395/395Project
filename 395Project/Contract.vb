@@ -11,36 +11,23 @@ Public Class Contract
         End If
         ' stored proc will not compatible with the gridview data update and delete!!! May have to use simpler way
         'login.SQL.ExecQuery("searchClient " + idsearch.ToString + "," + searchstr)
-        login.SQL.ExecQuery("select * from Contracts where CID = " + idsearch.ToString + "or FileNum like '%" + searchstr + "%' or ClientID like '%" + searchstr +
-                             "%' or Salary like '%" + searchstr + "%' or Renewable like '%" + searchstr + "%' or RenewYear like '%" + searchstr + "%'")
+        login.SQL.ExecQuery("select * from Contracts where CID = " + idsearch.ToString + "or FileNum = '" + searchstr + "' or ClientID = '" + searchstr +
+                             "' or Salary = '" + searchstr + "' or Renewable = '" + searchstr + "' or RenewYear = '" + searchstr + "'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         LoadGrid()
     End Sub
 
-    Private Sub Client_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim intResult As Integer
-        intResult = MessageBox.Show("You sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
-        If intResult = DialogResult.OK Then
-            Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
-            login.SQL.DBDA.Update(login.SQL.DBDS)
-            MsgBox("Changes updated!")
-        End If
-    End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim intResult As Integer
-        intResult = MessageBox.Show("You sure you want to cancel this order", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
+        intResult = MessageBox.Show("You sure you want to remove this contractor?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
         If intResult = DialogResult.OK Then
             DataGridView1.Rows.RemoveAt(DataGridView1.CurrentCell.RowIndex)
-            Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
             login.SQL.DBDA.Update(login.SQL.DBDS)
-            MsgBox("Deleted")
+            MsgBox("Contractor successfully removed")
         End If
     End Sub
 
@@ -68,6 +55,10 @@ Public Class Contract
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+
+    Private Sub Contract_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

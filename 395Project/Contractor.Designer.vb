@@ -27,7 +27,6 @@ Partial Class Contractor
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.backButton = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -74,23 +73,13 @@ Partial Class Contractor
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(466, 340)
+        Me.Button3.Location = New System.Drawing.Point(424, 341)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(95, 37)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = "Delete"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(183, 340)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(95, 37)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Update"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -113,11 +102,11 @@ Partial Class Contractor
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(322, 340)
+        Me.Button5.Location = New System.Drawing.Point(243, 341)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(104, 36)
         Me.Button5.TabIndex = 15
-        Me.Button5.Text = "View"
+        Me.Button5.Text = "Update"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Contractor
@@ -132,7 +121,6 @@ Partial Class Contractor
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Contractor"
@@ -148,7 +136,6 @@ Partial Class Contractor
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents backButton As Button
     Friend WithEvents Button5 As Button

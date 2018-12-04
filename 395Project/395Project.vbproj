@@ -156,6 +156,12 @@
     <Compile Include="Status.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="updateClient.Designer.vb">
+      <DependentUpon>updateClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="updateConctractor.Designer.vb">
       <DependentUpon>updateConctractor.vb</DependentUpon>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Status.resx">
       <DependentUpon>Status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateClient.resx">
+      <DependentUpon>updateClient.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="updateConctractor.resx">
       <DependentUpon>updateConctractor.vb</DependentUpon>
