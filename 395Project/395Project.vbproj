@@ -91,16 +91,16 @@
     <Compile Include="Client.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contractor.Designer.vb">
-      <DependentUpon>Contractor.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Contractor.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Contract.Designer.vb">
       <DependentUpon>Contract.vb</DependentUpon>
     </Compile>
     <Compile Include="Contract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contractor.Designer.vb">
+      <DependentUpon>Contractor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contractor.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HourTracking.Designer.vb">
@@ -156,12 +156,6 @@
     <Compile Include="Status.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="updateClient.Designer.vb">
-      <DependentUpon>updateClient.vb</DependentUpon>
-    </Compile>
-    <Compile Include="updateClient.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="updateConctractor.Designer.vb">
       <DependentUpon>updateConctractor.vb</DependentUpon>
     </Compile>
@@ -185,11 +179,11 @@
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Contractor.resx">
-      <DependentUpon>Contractor.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Contract.resx">
       <DependentUpon>Contract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contractor.resx">
+      <DependentUpon>Contractor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HourTracking.resx">
       <DependentUpon>HourTracking.vb</DependentUpon>
@@ -214,9 +208,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Status.resx">
       <DependentUpon>Status.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="updateClient.resx">
-      <DependentUpon>updateClient.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="updateConctractor.resx">
       <DependentUpon>updateConctractor.vb</DependentUpon>

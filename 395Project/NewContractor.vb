@@ -20,16 +20,11 @@ Public Class NewContractor
 
         Else
             Try
-                Dim parsedValue As Integer
-                Dim insertQuery As String = "INSERT INTO Contractor(first_name,last_name,email,rate_of_pay,contract_length) VALUES (@first_name,@last_name,@email,@rate_of_pay,@contract_length)"
+
+                Dim insertQuery As String = "INSERT INTO Contractors(FName,LName,Cemail) VALUES (@first_name,@last_name,@email)"
                 Dim emailCheck As Match = Regex.Match(conEmailText.Text, "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$", RegexOptions.IgnoreCase)
-                If (Not Integer.TryParse(conPayText.Text, parsedValue)) Or parsedValue <= 0 Then
-                    MessageBox.Show("Please enter a valid rate")
-                    conPayText.Clear()
-                ElseIf (Not Integer.TryParse(contractLengthText.Text, parsedValue)) Or parsedValue <= 0 Then
-                    MessageBox.Show("Please enter a valid contract length")
-                    contractLengthText.Clear()
-                ElseIf (System.Text.RegularExpressions.Regex.Match(conFirstNameText.Text, "^[1-9]+$").Success) Then
+
+                If (System.Text.RegularExpressions.Regex.Match(conFirstNameText.Text, "^[1-9]+$").Success) Then
                     MessageBox.Show("Please enter a valid First Name")
                     conFirstNameText.Clear()
                 ElseIf (System.Text.RegularExpressions.Regex.IsMatch(conLastNameText.Text, "^[1-9]+$")) Then
@@ -42,8 +37,7 @@ Public Class NewContractor
                     login.SQL.AddParam("@first_name", conFirstNameText.Text)
                     login.SQL.AddParam("@last_name", conLastNameText.Text)
                     login.SQL.AddParam("@email", conEmailText.Text)
-                    login.SQL.AddParam("@rate_of_pay", conPayText.Text)
-                    login.SQL.AddParam("@contract_length", contractLengthText.Text)
+
 
                     login.SQL.ExecQuery(insertQuery)
                     MessageBox.Show("Contractor Sucessfully Added")
@@ -51,9 +45,7 @@ Public Class NewContractor
                     conFirstNameText.Clear()
                     conLastNameText.Clear()
                     conEmailText.Clear()
-                    conPayText.Clear()
-                    conPayText.Clear()
-                    contractLengthText.Clear()
+
                 End If
 
             Catch ex As Exception

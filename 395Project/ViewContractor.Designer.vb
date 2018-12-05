@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ViewContractor
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,19 +20,19 @@ Partial Class ViewContractor
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.firstNameTextBox = New System.Windows.Forms.TextBox()
         Me.lastNameTextBox = New System.Windows.Forms.TextBox()
         Me.CIDTextBox = New System.Windows.Forms.TextBox()
-        Me.contractTextBox = New System.Windows.Forms.TextBox()
         Me.submitButton = New System.Windows.Forms.Button()
+        Me.emailTextBox = New System.Windows.Forms.TextBox()
+        Me.emailLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -75,16 +75,6 @@ Partial Class ViewContractor
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Last Name:"
         '
-        'Label5
-        '
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(220, 141)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 17)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Contract Length:"
-        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(37, 272)
@@ -120,14 +110,6 @@ Partial Class ViewContractor
         Me.CIDTextBox.Size = New System.Drawing.Size(115, 21)
         Me.CIDTextBox.TabIndex = 16
         '
-        'contractTextBox
-        '
-        Me.contractTextBox.Location = New System.Drawing.Point(338, 140)
-        Me.contractTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.contractTextBox.Name = "contractTextBox"
-        Me.contractTextBox.Size = New System.Drawing.Size(115, 21)
-        Me.contractTextBox.TabIndex = 17
-        '
         'submitButton
         '
         Me.submitButton.Location = New System.Drawing.Point(374, 272)
@@ -138,18 +120,36 @@ Partial Class ViewContractor
         Me.submitButton.Text = "Submit"
         Me.submitButton.UseVisualStyleBackColor = True
         '
+        'emailTextBox
+        '
+        Me.emailTextBox.Location = New System.Drawing.Point(354, 147)
+        Me.emailTextBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.emailTextBox.Name = "emailTextBox"
+        Me.emailTextBox.Size = New System.Drawing.Size(115, 21)
+        Me.emailTextBox.TabIndex = 19
+        '
+        'emailLabel
+        '
+        Me.emailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailLabel.Location = New System.Drawing.Point(262, 142)
+        Me.emailLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.emailLabel.Name = "emailLabel"
+        Me.emailLabel.Size = New System.Drawing.Size(88, 17)
+        Me.emailLabel.TabIndex = 13
+        Me.emailLabel.Text = "Email:"
+        '
         'ViewContractor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(600, 338)
         Me.Controls.Add(Me.submitButton)
-        Me.Controls.Add(Me.contractTextBox)
+        Me.Controls.Add(Me.emailTextBox)
         Me.Controls.Add(Me.CIDTextBox)
         Me.Controls.Add(Me.lastNameTextBox)
         Me.Controls.Add(Me.firstNameTextBox)
+        Me.Controls.Add(Me.emailLabel)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -166,11 +166,11 @@ Partial Class ViewContractor
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents firstNameTextBox As TextBox
     Friend WithEvents lastNameTextBox As TextBox
     Friend WithEvents CIDTextBox As TextBox
-    Friend WithEvents contractTextBox As TextBox
     Friend WithEvents submitButton As Button
+    Friend WithEvents emailTextBox As TextBox
+    Friend WithEvents emailLabel As Label
 End Class

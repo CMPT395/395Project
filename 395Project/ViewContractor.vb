@@ -7,9 +7,6 @@ Public Class ViewContractor
         firstNameTextBox.Text = Contractor.DataGridView1.CurrentRow.Cells(1).Value.ToString
         lastNameTextBox.Text = Contractor.DataGridView1.CurrentRow.Cells(2).Value.ToString
         CIDTextBox.Text = Contractor.DataGridView1.CurrentRow.Cells(0).Value.ToString
-        ''emailTextBox.Text = Contractor.DataGridView1.CurrentRow.Cells(3).Value.ToString
-
-
 
 
 
@@ -37,8 +34,9 @@ Public Class ViewContractor
 
         Else
             Try
-                Dim updateQuery As String = "UPDATE Contractor SET first_name = @first_name, last_name = @last_name,email = @email where ClientID = '" + CIDTextBox.Text + "'"
-                ''Dim emailCheck As Match = Regex.Match(emailTextBox.Text, "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$", RegexOptions.IgnoreCase)
+                '' Dim parsedValue As Integer
+                Dim updateQuery As String = "UPDATE Contractors SET FName = @first_name, LName = @last_name,Cemail = @email where ClientID = '" + CIDTextBox.Text + "'"
+                Dim emailCheck As Match = Regex.Match(emailTextBox.Text, "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$", RegexOptions.IgnoreCase)
 
                 If (System.Text.RegularExpressions.Regex.Match(firstNameTextBox.Text, "^[1-9]+$").Success) Then
                     MessageBox.Show("Please enter a valid First Name")
@@ -46,9 +44,13 @@ Public Class ViewContractor
                 ElseIf (System.Text.RegularExpressions.Regex.IsMatch(lastNameTextBox.Text, "^[1-9]+$")) Then
                     MessageBox.Show("Please enter a valid Last Name")
                     firstNameTextBox.Clear()
+                ElseIf emailCheck.Success = False Then
+                    MessageBox.Show("Please enter a valid email")
+                    emailTextBox.Clear()
                 Else
                     login.SQL.AddParam("@first_name", firstNameTextBox.Text)
                     login.SQL.AddParam("@last_name", lastNameTextBox.Text)
+                    login.SQL.AddParam("@email", emailTextBox.Text)
 
 
                     login.SQL.ExecQuery(updateQuery)
@@ -56,7 +58,8 @@ Public Class ViewContractor
 
                     firstNameTextBox.Clear()
                     lastNameTextBox.Clear()
-                    contractTextBox.Clear()
+                    emailTextBox.Clear()
+
                 End If
 
             Catch ex As Exception

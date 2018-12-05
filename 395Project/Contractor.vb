@@ -57,4 +57,8 @@ Public Class Contractor
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         DataGridView1.MultiSelect = False
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
