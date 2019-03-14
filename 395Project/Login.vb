@@ -35,14 +35,6 @@
         End If
     End Sub
 
-    Private Sub login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub idbox_TextChanged(sender As Object, e As EventArgs) Handles idbox.TextChanged
-
-    End Sub
-
     Private Sub Clear_Click(sender As Object, e As EventArgs) Handles Clear.Click
         idbox.Clear()
         passwordbox.Clear()
